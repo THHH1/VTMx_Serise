@@ -1,0 +1,822 @@
+Dependencies for Project 'usbd_hid', Target 'USBD_HID_VTM071x': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\src\app.c)(0x5C061244)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc\usbd_hid_core.h)(0x5BD663A2)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_usr.h)(0x5BAE3178)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\src\VTM071x_it.c)(0x6205C5CA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_it.o --omf_browse .\objects\vtm071x_it.crf --depend .\objects\vtm071x_it.d)
+I (..\inc\VTM071x_it.h)(0x5ABB518A)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc\usbd_hid_core.h)(0x5BD663A2)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\src\usb_bsp.c)(0x5BD541E4)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usb_bsp.o --omf_browse .\objects\usb_bsp.crf --depend .\objects\usb_bsp.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+F (..\src\usbd_desc.c)(0x5C04D0AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_desc.o --omf_browse .\objects\usbd_desc.crf --depend .\objects\usbd_desc.d)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+F (..\src\usbd_pwr.c)(0x5C088196)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_pwr.o --omf_browse .\objects\usbd_pwr.crf --depend .\objects\usbd_pwr.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+F (..\src\usbd_usr.c)(0x5BD541E4)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_usr.o --omf_browse .\objects\usbd_usr.crf --depend .\objects\usbd_usr.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_usr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+F (..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\src\usbd_hid_core.c)(0x5C0881CE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_hid_core.o --omf_browse .\objects\usbd_hid_core.crf --depend .\objects\usbd_hid_core.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc\usbd_hid_core.h)(0x5BD663A2)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+F (..\..\..\Libraries\VTM071x_USB_Device_Driver\src\usb_core.c)(0x5C04F106)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+F (..\..\..\Libraries\VTM071x_USB_Device_Driver\src\usb_dcd.c)(0x5BD53102)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usb_dcd.o --omf_browse .\objects\usb_dcd.crf --depend .\objects\usb_dcd.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+F (..\..\..\Libraries\VTM071x_USB_Device_Driver\src\usb_dcd_int.c)(0x5C47BD70)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usb_dcd_int.o --omf_browse .\objects\usb_dcd_int.crf --depend .\objects\usb_dcd_int.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+F (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\src\usbd_core.c)(0x5C08FB88)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_core.o --omf_browse .\objects\usbd_core.crf --depend .\objects\usbd_core.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+F (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\src\usbd_ioreq.c)(0x5BD6687A)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_ioreq.o --omf_browse .\objects\usbd_ioreq.crf --depend .\objects\usbd_ioreq.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+F (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\src\usbd_req.c)(0x5C1074F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\usbd_req.o --omf_browse .\objects\usbd_req.crf --depend .\objects\usbd_req.d)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_req.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x5BD66858)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_def.h)(0x5BAE3178)
+I (..\inc\usbd_conf.h)(0x5BD541E4)
+I (..\inc\usb_conf.h)(0x6204D369)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_core.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd.h)(0x5C08FB8E)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_core.h)(0x5BC8564C)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_regs.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_dcd_int.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc\usbd_pwr.h)(0x5BAE3178)
+I (..\..\..\Libraries\VTM071x_USB_Device_Driver\inc\usb_bsp.h)(0x5BAE3178)
+I (..\inc\usbd_desc.h)(0x5BD6A2E6)
+F (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Source\Templates\ARM\startup_VTM071x.s)(0x6204CDA7)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 536" --pd "ARMCM0 SETA 1"--list .\listings\startup_vtm071x.lst --xref -o .\objects\startup_vtm071x.o --depend .\objects\startup_vtm071x.d)
+F (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Source\Templates\system_VTM071x.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\system_vtm071x.o --omf_browse .\objects\system_vtm071x.crf --depend .\objects\system_vtm071x.d)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\misc.c)(0x5AB892FC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_acmp.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_acmp.o --omf_browse .\objects\vtm071x_acmp.crf --depend .\objects\vtm071x_acmp.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_adc.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_adc.o --omf_browse .\objects\vtm071x_adc.crf --depend .\objects\vtm071x_adc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_dac.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_dac.o --omf_browse .\objects\vtm071x_dac.crf --depend .\objects\vtm071x_dac.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dac.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_dma.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_dma.o --omf_browse .\objects\vtm071x_dma.crf --depend .\objects\vtm071x_dma.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_flash.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_flash.o --omf_browse .\objects\vtm071x_flash.crf --depend .\objects\vtm071x_flash.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_gpio.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_gpio.o --omf_browse .\objects\vtm071x_gpio.crf --depend .\objects\vtm071x_gpio.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_i2c.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_i2c.o --omf_browse .\objects\vtm071x_i2c.crf --depend .\objects\vtm071x_i2c.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_iwdg.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_iwdg.o --omf_browse .\objects\vtm071x_iwdg.crf --depend .\objects\vtm071x_iwdg.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_maths.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_maths.o --omf_browse .\objects\vtm071x_maths.crf --depend .\objects\vtm071x_maths.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_mcpwm.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_mcpwm.o --omf_browse .\objects\vtm071x_mcpwm.crf --depend .\objects\vtm071x_mcpwm.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_rcc.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_rcc.o --omf_browse .\objects\vtm071x_rcc.crf --depend .\objects\vtm071x_rcc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_rtc.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_rtc.o --omf_browse .\objects\vtm071x_rtc.crf --depend .\objects\vtm071x_rtc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_spi.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_spi.o --omf_browse .\objects\vtm071x_spi.crf --depend .\objects\vtm071x_spi.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_timer.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_timer.o --omf_browse .\objects\vtm071x_timer.crf --depend .\objects\vtm071x_timer.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_tsc.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_tsc.o --omf_browse .\objects\vtm071x_tsc.crf --depend .\objects\vtm071x_tsc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_usart.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_usart.o --omf_browse .\objects\vtm071x_usart.crf --depend .\objects\vtm071x_usart.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_wwdg.c)(0x6205C628)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Driver\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Core\inc -I ..\..\..\Libraries\VTM071x_USB_Device_Library\Class\hid\inc-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER-o .\objects\vtm071x_wwdg.o --omf_browse .\objects\vtm071x_wwdg.crf --depend .\objects\vtm071x_wwdg.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\vtm071x.h)(0x6205C628)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_vtm071x.h)(0x6205C628)
+I (..\inc\VTM071x_conf.h)(0x6205C5CA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x6205C628)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x6205C628)
