@@ -1,0 +1,10 @@
+#ifndef __TEMPERATURE_UPLOAD_LOCALSER__
+#define __TEMPERATURE_UPLOAD_LOCALSER__
+
+
+
+
+
+
+
+#endif
