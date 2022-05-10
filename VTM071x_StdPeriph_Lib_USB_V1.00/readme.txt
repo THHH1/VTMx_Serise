@@ -39,7 +39,7 @@ V1.00
 	
 5、CDC_HID_Composite
 	现象--综合了Custom HID和Virtual_COM_Port
-	PS--需要手动安装驱动MIC_HID_CDC_Driver.inf
+	PS--需要手动安装驱动MIC_HID_CDC_Driver.inf 
 	
 	
 	
