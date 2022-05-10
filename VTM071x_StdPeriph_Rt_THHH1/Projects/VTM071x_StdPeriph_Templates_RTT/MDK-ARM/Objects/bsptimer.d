@@ -54,6 +54,7 @@
 .\objects\bsptimer.o: .\RTE\OLED\oled.h
 .\objects\bsptimer.o: .\RTE\Dev\BMI160.h
 .\objects\bsptimer.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\bsptimer.o: .\RTE\Dev\LM75BD.h
 .\objects\bsptimer.o: .\RTE\App\WeatherInfo.h
 .\objects\bsptimer.o: .\RTE\App\NtpExample.h
 .\objects\bsptimer.o: .\RTE\App\TemperatureUploadLocalSer.h

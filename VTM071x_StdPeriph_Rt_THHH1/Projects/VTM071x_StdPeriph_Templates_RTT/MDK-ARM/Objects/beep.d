@@ -54,6 +54,7 @@
 .\objects\beep.o: .\RTE\OLED\oled.h
 .\objects\beep.o: .\RTE\Dev\BMI160.h
 .\objects\beep.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\beep.o: .\RTE\Dev\LM75BD.h
 .\objects\beep.o: .\RTE\App\WeatherInfo.h
 .\objects\beep.o: .\RTE\App\NtpExample.h
 .\objects\beep.o: .\RTE\App\TemperatureUploadLocalSer.h

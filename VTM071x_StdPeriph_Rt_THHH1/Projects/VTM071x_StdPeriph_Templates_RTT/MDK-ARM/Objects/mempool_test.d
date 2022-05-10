@@ -54,6 +54,7 @@
 .\objects\mempool_test.o: .\RTE\OLED\oled.h
 .\objects\mempool_test.o: .\RTE\Dev\BMI160.h
 .\objects\mempool_test.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\mempool_test.o: .\RTE\Dev\LM75BD.h
 .\objects\mempool_test.o: .\RTE\App\WeatherInfo.h
 .\objects\mempool_test.o: .\RTE\App\NtpExample.h
 .\objects\mempool_test.o: .\RTE\App\TemperatureUploadLocalSer.h

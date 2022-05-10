@@ -54,6 +54,7 @@
 .\objects\bspesp8266.o: .\RTE\OLED\oled.h
 .\objects\bspesp8266.o: .\RTE\Dev\BMI160.h
 .\objects\bspesp8266.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\bspesp8266.o: .\RTE\Dev\LM75BD.h
 .\objects\bspesp8266.o: .\RTE\App\WeatherInfo.h
 .\objects\bspesp8266.o: .\RTE\App\NtpExample.h
 .\objects\bspesp8266.o: .\RTE\App\TemperatureUploadLocalSer.h

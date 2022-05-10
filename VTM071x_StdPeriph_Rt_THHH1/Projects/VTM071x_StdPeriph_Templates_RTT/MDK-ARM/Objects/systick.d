@@ -54,6 +54,7 @@
 .\objects\systick.o: .\RTE\OLED\oled.h
 .\objects\systick.o: .\RTE\Dev\BMI160.h
 .\objects\systick.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\systick.o: .\RTE\Dev\LM75BD.h
 .\objects\systick.o: .\RTE\App\WeatherInfo.h
 .\objects\systick.o: .\RTE\App\NtpExample.h
 .\objects\systick.o: .\RTE\App\TemperatureUploadLocalSer.h
