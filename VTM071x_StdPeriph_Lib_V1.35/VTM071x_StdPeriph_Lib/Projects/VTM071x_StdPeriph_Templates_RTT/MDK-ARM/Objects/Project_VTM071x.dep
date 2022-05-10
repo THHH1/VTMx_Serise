@@ -1,0 +1,1369 @@
+Dependencies for Project 'Project', Target 'VTM071x': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\system_VTM071x.c)(0x618B6DF6)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\system_vtm071x.o --omf_browse .\objects\system_vtm071x.crf --depend .\objects\system_vtm071x.d)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Source\Templates\ARM\startup_VTM071x.s)(0x61890074)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 536" --pd "ARMCM0 SETA 1"--list .\listings\startup_vtm071x.lst --xref -o .\objects\startup_vtm071x.o --depend .\objects\startup_vtm071x.d)
+F (..\main.c)(0x61DEB19C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\RTOS\config.h)(0x61E67D01)()
+F (..\VTM071x_it.c)(0x61DE46CE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_it.o --omf_browse .\objects\vtm071x_it.crf --depend .\objects\vtm071x_it.d)
+I (..\VTM071x_it.h)(0x618B6DF6)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)()
+F (.\RTE\RTOS\uart_sample.c)(0x61D5511E)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\uart_sample.o --omf_browse .\objects\uart_sample.crf --depend .\objects\uart_sample.d)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (.\RTE\RTOS\system.c)(0x61E67D6E)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d)
+I (RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\RTOS\Task.c)(0x61DEB030)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\task.o --omf_browse .\objects\task.crf --depend .\objects\task.d)
+I (RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\SysTick.c)(0x61DE9673)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\Exti.c)(0x61DEAA9C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\exti.o --omf_browse .\objects\exti.crf --depend .\objects\exti.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\Gpio.c)(0x61DEB32F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\USart.c)(0x61E6899A)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+I (RTE\Dev\USart.h)(0x61DEA94A)
+F (.\RTE\Dev\Button.c)(0x61E68940)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\button.o --omf_browse .\objects\button.crf --depend .\objects\button.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\BspTimer.c)(0x61E67F61)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\bsptimer.o --omf_browse .\objects\bsptimer.crf --depend .\objects\bsptimer.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\Dev\Adc.c)(0x61E68747)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (.\RTE\RTOS\config.h)(0x61E67D01)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (.\RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (.\RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+I (RTE\Dev\Adc.h)(0x61E6833F)
+F (..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_eval.o --omf_browse .\objects\vtm071x_eval.crf --depend .\objects\vtm071x_eval.d)
+I (..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Utilities\VTM071x_EVAL\Common\VTM071x_eval_i2c_ee.c)(0x61E7BFBA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_eval_i2c_ee.o --omf_browse .\objects\vtm071x_eval_i2c_ee.crf --depend .\objects\vtm071x_eval_i2c_ee.d)
+I (..\..\..\Utilities\VTM071x_EVAL\Common\VTM071x_eval_i2c_ee.h)(0x618900BA)
+I (..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\..\..\Utilities\VTM071x_EVAL\Common\VTM071x_eval_spi.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_eval_spi.o --omf_browse .\objects\vtm071x_eval_spi.crf --depend .\objects\vtm071x_eval_spi.d)
+I (..\..\..\Utilities\VTM071x_EVAL\Common\VTM071x_eval_spi.h)(0x61890074)
+I (..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (.\RTE\RTOS\board.c)(0x61DEB103)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\board_1.o --omf_browse .\objects\board_1.crf --depend .\objects\board_1.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (RTE\RTOS\config.h)(0x61E67D01)
+I (RTE\RTOS\Task.h)(0x61DEA94A)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (RTE\RTOS\system.h)(0x5E35551A)
+I (.\RTE\Dev\SysTick.h)(0x5E76C304)
+I (.\RTE\Dev\Gpio.h)(0x61DEA288)
+I (..\..\..\3.1.5\components\HAL_Drivers\USart.h)(0x61DEA94A)
+I (.\RTE\Dev\Exti.h)(0x5E30F666)
+I (.\RTE\Dev\BspTimer.h)(0x61E67D6E)
+I (.\RTE\Dev\Button.h)(0x5E4004C2)
+F (.\RTE\RTOS\finsh_port.c)(0x619623C4)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\finsh_port.o --omf_browse .\objects\finsh_port.crf --depend .\objects\finsh_port.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\components\finsh\cmd.c)(0x60AB6EEC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\cmd.o --omf_browse .\objects\cmd.crf --depend .\objects\cmd.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\components\finsh\finsh.h)(0x60C33DC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x60252376)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\..\..\3.1.5\components\finsh\msh.c)(0x60AB6EFA)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\msh.o --omf_browse .\objects\msh.crf --depend .\objects\msh.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\components\finsh\msh.h)(0x60A8D406)
+I (..\..\..\3.1.5\components\finsh\finsh.h)(0x60C33DC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x60252376)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\..\..\3.1.5\components\finsh\shell.h)(0x60AB6ABC)
+F (..\..\..\3.1.5\components\finsh\shell.c)(0x60AB6F04)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\shell.o --omf_browse .\objects\shell.crf --depend .\objects\shell.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\components\finsh\finsh.h)(0x60C33DC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x60252376)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\..\..\3.1.5\components\finsh\shell.h)(0x60AB6ABC)
+I (..\..\..\3.1.5\components\finsh\msh.h)(0x60A8D406)
+F (..\..\..\3.1.5\libcpu\arm\cortex-m0\context_rvds.S)(0x60A8D40C)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 536" --pd "ARMCM0 SETA 1"--list .\listings\context_rvds.lst --xref -o .\objects\context_rvds.o --depend .\objects\context_rvds.d)
+F (..\..\..\3.1.5\libcpu\arm\cortex-m0\cpuport.c)(0x60A8D40C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\cpuport.o --omf_browse .\objects\cpuport.crf --depend .\objects\cpuport.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\components\device\device.c)(0x60AB10EC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\device.o --omf_browse .\objects\device.crf --depend .\objects\device.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\clock.c)(0x60A8D412)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\idle.c)(0x60A8D666)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\idle.o --omf_browse .\objects\idle.crf --depend .\objects\idle.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\ipc.c)(0x60A8D666)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\ipc.o --omf_browse .\objects\ipc.crf --depend .\objects\ipc.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+F (..\..\..\3.1.5\src\irq.c)(0x60A8D412)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\irq.o --omf_browse .\objects\irq.crf --depend .\objects\irq.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\kservice.c)(0x60AB4078)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\kservice.o --omf_browse .\objects\kservice.crf --depend .\objects\kservice.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+F (..\..\..\3.1.5\src\mem.c)(0x60A8D414)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\mem.o --omf_browse .\objects\mem.crf --depend .\objects\mem.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\components\finsh\finsh.h)(0x60C33DC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x60252376)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\..\..\3.1.5\src\mempool.c)(0x60A8D414)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\mempool.o --omf_browse .\objects\mempool.crf --depend .\objects\mempool.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\object.c)(0x60A8D414)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\object.o --omf_browse .\objects\object.crf --depend .\objects\object.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+F (..\..\..\3.1.5\src\scheduler.c)(0x60A8D666)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\scheduler.o --omf_browse .\objects\scheduler.crf --depend .\objects\scheduler.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+F (..\..\..\3.1.5\src\thread.c)(0x60A8D666)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\thread.o --omf_browse .\objects\thread.crf --depend .\objects\thread.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\3.1.5\src\timer.c)(0x60ACEABE)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+F (..\..\..\3.1.5\src\components.c)(0x60A8D666)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\components.o --omf_browse .\objects\components.crf --depend .\objects\components.d)
+I (..\..\..\3.1.5\include\rthw.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtthread.h)(0x60A8D666)
+I (.\RTE\RTOS\rtconfig.h)(0x61D68FE9)
+I (.\RTE\RTOS\finsh_config.h)(0x61C57800)
+I (..\..\..\3.1.5\include\rtdebug.h)(0x60A8D406)
+I (..\..\..\3.1.5\include\rtdef.h)(0x60AC8CC6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x60252376)
+I (..\..\..\3.1.5\include\rtservice.h)(0x60ACCB92)
+I (..\..\..\3.1.5\components\finsh\finsh_api.h)(0x60C33D54)
+I (..\..\..\3.1.5\components\finsh\finsh_config.h)(0x61C57899)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\misc.c)(0x5AB892FC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_acmp.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_acmp.o --omf_browse .\objects\vtm071x_acmp.crf --depend .\objects\vtm071x_acmp.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_adc.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_adc.o --omf_browse .\objects\vtm071x_adc.crf --depend .\objects\vtm071x_adc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_dac.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_dac.o --omf_browse .\objects\vtm071x_dac.crf --depend .\objects\vtm071x_dac.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dac.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_dma.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_dma.o --omf_browse .\objects\vtm071x_dma.crf --depend .\objects\vtm071x_dma.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_flash.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_flash.o --omf_browse .\objects\vtm071x_flash.crf --depend .\objects\vtm071x_flash.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_gpio.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_gpio.o --omf_browse .\objects\vtm071x_gpio.crf --depend .\objects\vtm071x_gpio.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_i2c.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_i2c.o --omf_browse .\objects\vtm071x_i2c.crf --depend .\objects\vtm071x_i2c.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_iwdg.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_iwdg.o --omf_browse .\objects\vtm071x_iwdg.crf --depend .\objects\vtm071x_iwdg.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_maths.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_maths.o --omf_browse .\objects\vtm071x_maths.crf --depend .\objects\vtm071x_maths.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_mcpwm.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_mcpwm.o --omf_browse .\objects\vtm071x_mcpwm.crf --depend .\objects\vtm071x_mcpwm.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_rcc.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_rcc.o --omf_browse .\objects\vtm071x_rcc.crf --depend .\objects\vtm071x_rcc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_rtc.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_rtc.o --omf_browse .\objects\vtm071x_rtc.crf --depend .\objects\vtm071x_rtc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_spi.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_spi.o --omf_browse .\objects\vtm071x_spi.crf --depend .\objects\vtm071x_spi.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_timer.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_timer.o --omf_browse .\objects\vtm071x_timer.crf --depend .\objects\vtm071x_timer.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_tsc.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_tsc.o --omf_browse .\objects\vtm071x_tsc.crf --depend .\objects\vtm071x_tsc.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_usart.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_usart.o --omf_browse .\objects\vtm071x_usart.crf --depend .\objects\vtm071x_usart.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
+F (..\..\..\Libraries\VTM071x_StdPeriph_Driver\src\VTM071x_wwdg.c)(0x61890074)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\VTM071x_StdPeriph_Templates_RTT -I ..\..\..\Libraries\CMSIS\Include -I ..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include -I ..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc -I ..\..\..\Utilities -I ..\..\..\Utilities\VTM071x_EVAL -I ..\..\..\Utilities\VTM071x_EVAL\Common -I ..\..\..\3.1.5\src -I ..\..\..\3.1.5\components\device -I ..\..\..\3.1.5\components\finsh -I ..\..\..\3.1.5\components\HAL_Drivers -I ..\..\..\3.1.5\components\include\drivers -I ..\..\..\3.1.5\include -I ..\..\..\3.1.5\libcpu -I .\RTE\RTOS -I .\RTE\Dev-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="536" -DARMCM0 -DUSE_STDPERIPH_DRIVER -DDAPLINK_VERSION="250" -DDAPLINK_BUILD_KEY="0x9B939E8F" -DDAPLINK_HIC_ID="0x97969908"-o .\objects\vtm071x_wwdg.o --omf_browse .\objects\vtm071x_wwdg.crf --depend .\objects\vtm071x_wwdg.d)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_wwdg.h)(0x618900BA)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\VTM071x.h)(0x61890074)
+I (..\..\..\Libraries\CMSIS\Include\core_cm0.h)(0x5C08E23E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\..\Libraries\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (..\..\..\Libraries\CMSIS\Device\MIC\VTM071x\Include\system_VTM071x.h)(0x618900BA)
+I (..\..\VTM071x_StdPeriph_Templates_RTT\VTM071x_conf.h)(0x618B6DF6)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_adc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_acmp.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_dma.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_flash.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_gpio.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_i2c.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_iwdg.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_mcpwm.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rcc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_rtc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_spi.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_timer.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_tsc.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_usart.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\VTM071x_maths.h)(0x618900BA)
+I (..\..\..\Libraries\VTM071x_StdPeriph_Driver\inc\misc.h)(0x61890074)
