@@ -69,6 +69,7 @@ typedef enum //定义消息枚举类型
 
 #include "oled.h"
 #include "BMI160.h"
+#include "LM75BD.h"
 //应用相关头文件包含
 #include "WeatherInfo.h"
 #include "NtpExample.h"

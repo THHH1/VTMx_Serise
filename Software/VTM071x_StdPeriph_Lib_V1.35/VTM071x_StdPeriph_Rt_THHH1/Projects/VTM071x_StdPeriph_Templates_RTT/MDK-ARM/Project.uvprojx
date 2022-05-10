@@ -493,6 +493,11 @@
               <FileType>1</FileType>
               <FilePath>.\RTE\Dev\BMI160.c</FilePath>
             </File>
+            <File>
+              <FileName>LM75BD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RTE\Dev\LM75BD.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

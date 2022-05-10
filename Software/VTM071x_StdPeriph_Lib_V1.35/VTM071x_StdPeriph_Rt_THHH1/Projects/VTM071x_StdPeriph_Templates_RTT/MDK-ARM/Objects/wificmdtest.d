@@ -54,6 +54,7 @@
 .\objects\wificmdtest.o: .\RTE\OLED\oled.h
 .\objects\wificmdtest.o: .\RTE\Dev\BMI160.h
 .\objects\wificmdtest.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\wificmdtest.o: .\RTE\Dev\LM75BD.h
 .\objects\wificmdtest.o: .\RTE\App\WeatherInfo.h
 .\objects\wificmdtest.o: .\RTE\App\NtpExample.h
 .\objects\wificmdtest.o: .\RTE\App\TemperatureUploadLocalSer.h

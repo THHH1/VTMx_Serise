@@ -54,6 +54,7 @@
 .\objects\task.o: .\RTE\OLED\oled.h
 .\objects\task.o: .\RTE\Dev\BMI160.h
 .\objects\task.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\task.o: .\RTE\Dev\LM75BD.h
 .\objects\task.o: .\RTE\App\WeatherInfo.h
 .\objects\task.o: .\RTE\App\NtpExample.h
 .\objects\task.o: .\RTE\App\TemperatureUploadLocalSer.h

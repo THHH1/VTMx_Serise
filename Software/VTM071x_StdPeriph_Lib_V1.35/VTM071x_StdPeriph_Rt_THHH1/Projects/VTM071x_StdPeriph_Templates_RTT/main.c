@@ -28,7 +28,8 @@ int main()
         BeepControl(1);
 		rt_thread_mdelay(1000);
         LedControl(Led0_num,0);	
-        BeepControl(0);        
+//        BeepControl(0);       
+		Read_LM75BD_Temputerature();		
 	}	
 }
 

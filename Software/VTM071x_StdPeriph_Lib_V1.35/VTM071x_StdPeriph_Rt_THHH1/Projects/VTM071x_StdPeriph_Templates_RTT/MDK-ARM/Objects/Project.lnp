@@ -17,6 +17,7 @@
 ".\objects\mempool_test.o"
 ".\objects\bspesp8266.o"
 ".\objects\bmi160.o"
+".\objects\lm75bd.o"
 ".\objects\wificmdtest.o"
 ".\objects\temperatureuploadlocalser.o"
 ".\objects\ntpexample.o"

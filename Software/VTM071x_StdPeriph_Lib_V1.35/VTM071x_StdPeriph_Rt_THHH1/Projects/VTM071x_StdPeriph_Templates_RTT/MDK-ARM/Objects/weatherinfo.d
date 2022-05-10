@@ -54,6 +54,7 @@
 .\objects\weatherinfo.o: .\RTE\OLED\oled.h
 .\objects\weatherinfo.o: .\RTE\Dev\BMI160.h
 .\objects\weatherinfo.o: ..\..\..\Utilities\VTM071x_EVAL\VTM071x_eval.h
+.\objects\weatherinfo.o: .\RTE\Dev\LM75BD.h
 .\objects\weatherinfo.o: .\RTE\App\WeatherInfo.h
 .\objects\weatherinfo.o: .\RTE\App\NtpExample.h
 .\objects\weatherinfo.o: .\RTE\App\TemperatureUploadLocalSer.h

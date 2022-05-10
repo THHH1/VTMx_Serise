@@ -9,8 +9,8 @@
 */ 
 #include "rtdef.h"
 
-#define Beep_Pin   GPIO_Pin_4
-#define Beep_GPIOx GPIO6
+#define Beep_Pin   GPIO_Pin_5
+#define Beep_GPIOx GPIO0
 
 /************************************************************
 功能：BEEP-GPIO初始化
