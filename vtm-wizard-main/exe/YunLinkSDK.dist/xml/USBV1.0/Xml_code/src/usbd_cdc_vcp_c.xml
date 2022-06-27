@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <var_USART_RxBuffer>uint8_t USART_RxBuffer[32];</var_USART_RxBuffer>
+    <VCP_DataTx_USART0> 
+    if (linecoding.datatype == 5)
+    {
+        APP_Rx_Buffer[APP_Rx_ptr_in] = USART_ReceiveData(USART0) &amp; 0x1F;
+    }
+    else if (linecoding.datatype == 6)
+    {
+        APP_Rx_Buffer[APP_Rx_ptr_in] = USART_ReceiveData(USART0) &amp; 0x3F;
+    }
+    else if (linecoding.datatype == 7)
+    {
+        APP_Rx_Buffer[APP_Rx_ptr_in] = USART_ReceiveData(USART0) &amp; 0x7F;
+    }
+    else if (linecoding.datatype == 8)
+    {
+        APP_Rx_Buffer[APP_Rx_ptr_in] = USART_ReceiveData(USART0);
+    }
+
+    APP_Rx_ptr_in++;
+
+    /* To avoid buffer overflow */
+    if(APP_Rx_ptr_in == APP_RX_DATA_SIZE)
+    {
+        APP_Rx_ptr_in = 0;
+    }
+    </VCP_DataTx_USART0>
+    <VCP_DataTx_Buf>    
+    int i;
+    for (i=0; i&lt;Len; i++)
+    {
+        if (linecoding.datatype == 5)
+        {
+            APP_Rx_Buffer[APP_Rx_ptr_in] = Buf[i] &amp; 0x1F;
+        }
+        else if (linecoding.datatype == 6)
+        {
+            APP_Rx_Buffer[APP_Rx_ptr_in] = Buf[i] &amp; 0x3F;
+        }
+        else if (linecoding.datatype == 7)
+        {
+            APP_Rx_Buffer[APP_Rx_ptr_in] = Buf[i] &amp; 0x7F;
+        }
+        else if (linecoding.datatype == 8)
+        {
+            APP_Rx_Buffer[APP_Rx_ptr_in] = Buf[i];
+        }
+
+        APP_Rx_ptr_in++;
+
+        /* To avoid buffer overflow */
+        if(APP_Rx_ptr_in == APP_RX_DATA_SIZE)
+        {
+            APP_Rx_ptr_in = 0;
+        }
+    }
+    </VCP_DataTx_Buf>
+    <USART0_IRQHandler_0>    
+    if (USART_GetITStatus(USART0, USART_IT_RXIS | USART_IT_RXTOIS) != RESET)
+    {
+        USART_ClearITPendingBit(USART0, USART_IT_RXIS | USART_IT_RXTOIS);
+        
+        /* Send the received data to the PC Host*/
+        VCP_DataTx(0,0);
+    }
+    </USART0_IRQHandler_0>
+    <USART0_IRQHandler_i>    
+    uint32_t i = 0;  
+    if (USART_GetITStatus(USART0, USART_IT_RXIS | USART_IT_RXTOIS) != RESET)
+    {
+        USART_ClearITPendingBit(USART0, USART_IT_RXIS | USART_IT_RXTOIS);
+
+        /* Send the received data to the PC Host*/
+        while (!USART_GetFlagStatus(USART0, USART_FLAG_RXFE))
+        {
+            USART_RxBuffer[i++] = USART_ReceiveData(USART0);
+        }
+
+        VCP_DataTx(USART_RxBuffer, i);
+    }
+    </USART0_IRQHandler_i>
+
+</template>

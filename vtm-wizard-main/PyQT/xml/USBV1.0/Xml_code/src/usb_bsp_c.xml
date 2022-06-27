@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <include_cdc_vcp>#include "usbd_cdc_vcp.h"</include_cdc_vcp>
+    <define_CRS_Config>
+    #if defined USB_CLOCK_SOURCE_CRS
+    static void CRS_Config(void);
+    #endif /* USB_CLOCK_SOURCE_CRS */
+    </define_CRS_Config>
+    <USB_BSP_Init_GPIO>    
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+    /* Key Initialization */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;
+    GPIO_Init(GPIO2, &amp;GPIO_InitStructure);
+
+    /* Led Initialization */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);
+    </USB_BSP_Init_GPIO>
+    <USB_BSP_EnableInterrupt_1>
+    NVIC_InitStructure.NVIC_IRQChannelPriority = 1;
+    </USB_BSP_EnableInterrupt_1>
+    <USB_BSP_EnableInterrupt_USB_IT_PRIO>
+    NVIC_InitStructure.NVIC_IRQChannelPriority = USB_IT_PRIO;
+    </USB_BSP_EnableInterrupt_USB_IT_PRIO>
+    <USB_BSP_DevConnect>
+    void USB_BSP_DevConnect(void)
+{
+    
+}
+    </USB_BSP_DevConnect>
+</template>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_cdc_vcp_c_var>null</usbd_cdc_vcp_c_var>
+    <usbd_cdc_vcp_c_VCP_DataTx>VCP_DataTx_USART0</usbd_cdc_vcp_c_VCP_DataTx>
+    <usbd_cdc_vcp_c_USART0_IRQHandler>USART0_IRQHandler_0</usbd_cdc_vcp_c_USART0_IRQHandler>
+</template>

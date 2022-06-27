@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <include_usbd_usr>
+    #include "usbd_usr.h"
+    </include_usbd_usr>
+    <include_custom_hid_core>
+    #include "usbd_custom_hid_core.h"
+    </include_custom_hid_core>
+    <include_cdc_core>
+    #include "usbd_cdc_core.h"
+    </include_cdc_core>
+    <include_stdio>
+    #include &lt;stdio.h>
+    </include_stdio>
+    <include_hid_core>
+    #include  "usbd_hid_core.h"
+    </include_hid_core>
+    <include_msc_core>
+    #include  "usbd_msc_core.h"
+    </include_msc_core>
+
+
+    <extern_USBD_HID_CDC_cb>
+    extern USBD_Class_cb_TypeDef  USBD_HID_CDC_cb;
+    </extern_USBD_HID_CDC_cb>
+    <extern_susp>
+    extern volatile uint32_t susp;
+    </extern_susp>
+
+
+    <USBD_Init_HID_cb>
+    USBD_Init(&amp;USB_Device_dev,
+              &amp;USR_desc,
+              &amp;USBD_HID_cb,
+              &amp;USR_cb);
+    </USBD_Init_HID_cb>
+    <USBD_Init_HID_CDC_cb>
+    USBD_Init(&amp;USB_Device_dev,
+              &amp;USR_desc,
+              &amp;USBD_HID_CDC_cb,
+              &amp;USR_cb);
+    </USBD_Init_HID_CDC_cb>
+    <USBD_Init_MSC_cb>
+    USBD_Init(&amp;USB_Device_dev,
+              &amp;USR_desc,
+              &amp;USBD_MSC_cb,
+              &amp;USR_cb);
+    </USBD_Init_MSC_cb>
+    <USBD_Init_CDC_cb>
+    USBD_Init(&amp;USB_Device_dev,
+              &amp;USR_desc,
+              &amp;USBD_CDC_cb,
+              &amp;USR_cb);
+    </USBD_Init_CDC_cb>
+
+</template>

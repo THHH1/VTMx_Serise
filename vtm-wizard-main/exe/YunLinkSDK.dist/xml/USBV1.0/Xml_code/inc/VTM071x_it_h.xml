@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_custom_hid_core>
+    #include "usbd_custom_hid_core.h"
+    </usbd_custom_hid_core>
+    <usbd_hid_core>
+    #include "usbd_hid_core.h"
+    </usbd_hid_core>
+    <usb_dcd_int>
+    #include "usb_dcd_int.h"
+    </usb_dcd_int>
+</template>

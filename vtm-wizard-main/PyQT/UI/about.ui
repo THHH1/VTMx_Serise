@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QDialog" name="About">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>682</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>682</width>
+    <height>465</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>About</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../req/req.qrc">
+    <normaloff>:/req/Create a new project/Yun.png</normaloff>:/req/Create a new project/Yun.png</iconset>
+  </property>
+  <widget class="QLabel" name="copyright">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>390</y>
+     <width>141</width>
+     <height>63</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>Copyright(c) by</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logogo">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>388</y>
+     <width>172</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>641</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="aboutus">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="text">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>581</width>
+     <height>322</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'微软雅黑'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;    合肥云联半导体有限公司成立于2020年6月，是一家专注于研发音视频的传输，发送，接收，编解码以及接口等处理芯片和高性能低功耗无线物联网系统级芯片的设计公司。公司总部位于合肥市高新区创新产业园，在北京，深圳和上海设有办事处。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;    公司主营业务为集成电路IC设计研发和销售，并可以实现定制化芯片设计、单芯片解决方案以及SOC芯片解决方案，同时提供相关技术咨询和技术服务。目前公司主要产品包括VT8系列低功耗4K超高清端口处理芯片，VT2202S低功耗HDMI2.0中继芯片，VT5101M/VT5101H低功耗4K超高清转换芯片（HDMI2.0,MIPI系列）以及VTC05系列低功耗蓝牙5.1/5.0SOC芯片，应用的行业有专业音视频，广电系统，车载音视频，医疗显示类产品，以及蓝牙室内定位，蓝牙低功耗组网，蓝牙智慧场景等物联网领域。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;云联半导体拥有设计能力和设计经验丰富的团队，核心成员具有多年ASIC/SOC芯片开发经验，熟悉模拟、数字和后端技术，精通设计、仿真以及流片、封装、测试全流程，在接口性IP、CPU、显示驱动、图形、音频处理，无线通讯技术等领域均有深厚的技术积累。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt;    公司秉承“持续创新，精工细作，分享共赢”的理念，始终向客户提供高性能高品质的芯片，帮助客户快速推出新产品，并建立长期稳定的合作关系。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>logogo</zorder>
+  <zorder>copyright</zorder>
+  <zorder>aboutus</zorder>
+  <zorder>text</zorder>
+ </widget>
+ <resources>
+  <include location="../req/req.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>logogo</sender>
+   <signal>clicked()</signal>
+   <receiver>About</receiver>
+   <slot>openweb()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>124</x>
+     <y>399</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openweb()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_Delay_ms1>
+    systick_ms = ms;
+    while(systick_ms);
+</main_Delay_ms1>
+<main_Delay_ms2>
+    systime_ms = ms;
+    while(systime_ms);
+</main_Delay_ms2>
+<main_Delay_ms3>
+    int i;
+    
+    for (i=0; i&lt;ms; i++)
+    {
+        Delay_us(1000);
+    }
+</main_Delay_ms3>
+<main_Delay_ms4>
+</main_Delay_ms4>
+<main_Delay_ms5></main_Delay_ms5>
+<main_Delay_ms6></main_Delay_ms6>
+</template>

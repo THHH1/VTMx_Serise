@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<key>main_include</key>
+<value>main_include2</value>
+
+<key>main_define</key>
+<value>main_define3</value>
+
+<key>main_volatile</key>
+<value>main_volatile2|main_volatile3</value>
+
+<key>main_function</key>
+<value>main_function19_3|main_function14|main_function15|main_function16|main_function17|main_function18</value>
+
+<key>main_printf</key>
+<value>main_printf6</value>
+
+<key>main_body</key>
+<value>main_body19</value>
+
+<key>main_whilebody</key>
+<value>null</value>
+
+<key>main_funbody</key>
+<value>main_funbody16|main_funbody17|main_funbody18|main_funbody19|main_funbody20</value>
+
+<key>main_Delay_ms</key>
+<value>null</value>
+
+<key>main_TIMER0_IRQHandler</key>
+<value>null</value>
+
+
+
+
+    <itkey>it_include</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_volatile</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_function</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_SysTick_Handler</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_funbody</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_GPIO0_TO_GPIO3_IRQHandler</itkey>
+    <itvalue>null</itvalue> 
+    <itkey>it_ADC_IRQHandler</itkey>
+    <itvalue>null</itvalue>
+
+</template>

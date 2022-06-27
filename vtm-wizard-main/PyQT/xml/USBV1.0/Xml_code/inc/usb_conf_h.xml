@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <USB_DEVICE_LOW_PWR_MGMT_SUPPORT>
+    #define USB_DEVICE_LOW_PWR_MGMT_SUPPORT
+    </USB_DEVICE_LOW_PWR_MGMT_SUPPORT>
+    <USB_CLOCK_SOURCE_CRS>
+    #define USB_CLOCK_SOURCE_CRS
+    </USB_CLOCK_SOURCE_CRS>
+    <EP_NUM4>
+    #define EP_NUM     (4)  /* EP0 + EP1 For HID + EP2/EP3 for CDC  */
+    </EP_NUM4>
+    <EP_NUM3>
+    #define EP_NUM     (3)  /* EP0 + EP1 for MSC IN + EP2 for MSC OUT */
+    </EP_NUM3>
+    <EP_NUM2>
+    #define EP_NUM     (2)  /* EP0 + EP1 IN For HID */
+    </EP_NUM2>
+    <BTABLE_ADDRESS>
+    #define BTABLE_ADDRESS      (0x000)
+    </BTABLE_ADDRESS>
+    <BTABLE_ADDRESS00>
+    #define BTABLE_ADDRESS      (0x00)
+    </BTABLE_ADDRESS00>
+    <ENDP0_RX_ADDRESS>
+    #define ENDP0_RX_ADDRESS   (0x00)
+    </ENDP0_RX_ADDRESS>
+    <ENDP0_TX_ADDRESS>
+    #define ENDP0_TX_ADDRESS   (0x40)
+    </ENDP0_TX_ADDRESS>
+    <HID_IN_TX_ADDRESS>
+    #define HID_IN_TX_ADDRESS  (0x80)
+    </HID_IN_TX_ADDRESS>
+    <HID_OUT_RX_ADDRESS>
+    #define HID_OUT_RX_ADDRESS (0xC0)
+    </HID_OUT_RX_ADDRESS>
+    <BULK_IN_TX_ADDRESS>
+    #define BULK_IN_TX_ADDRESS  (0x100)
+    </BULK_IN_TX_ADDRESS>
+    <BULK_IN_TX_ADDRESS80>
+    #define BULK_IN_TX_ADDRESS  (0x80)
+    </BULK_IN_TX_ADDRESS80>
+    <BULK_OUT_RX_ADDRESS>
+    #define BULK_OUT_RX_ADDRESS (0x140)
+    </BULK_OUT_RX_ADDRESS>
+    <BULK_OUT_RX_ADDRESSC0>
+    #define BULK_OUT_RX_ADDRESS     (0xC0)
+    </BULK_OUT_RX_ADDRESSC0>
+    <INT_IN_TX_ADDRESS>
+    #define INT_IN_TX_ADDRESS   (0x180)
+    </INT_IN_TX_ADDRESS>
+    <INT_IN_TX_ADDRESS100>
+    #define INT_IN_TX_ADDRESS   (0x100)
+    </INT_IN_TX_ADDRESS100>
+    <MSC_IN_TX_ADDRESS>
+    #define MSC_IN_TX_ADDRESS   (0x80)
+    </MSC_IN_TX_ADDRESS>
+    <MSC_OUT_RX_ADDRESS>
+    #define MSC_OUT_RX_ADDRESS  (0xC0)
+    </MSC_OUT_RX_ADDRESS>
+
+
+</template>

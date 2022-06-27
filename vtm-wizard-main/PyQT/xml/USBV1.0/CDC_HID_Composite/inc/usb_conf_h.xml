@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usb_conf_h_define>USB_CLOCK_SOURCE_CRS|EP_NUM4|BTABLE_ADDRESS|ENDP0_RX_ADDRESS|ENDP0_TX_ADDRESS|HID_IN_TX_ADDRESS|HID_OUT_RX_ADDRESS|BULK_IN_TX_ADDRESS|BULK_OUT_RX_ADDRESS|INT_IN_TX_ADDRESS</usb_conf_h_define>
+</template>

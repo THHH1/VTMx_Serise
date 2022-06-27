@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_volatile1>
+volatile uint32_t systick_ms = 0;
+</main_volatile1>
+<main_volatile2>
+volatile uint32_t timer_ms = 0;
+</main_volatile2>
+<main_volatile3>
+uint32_t r_buf[128];
+uint32_t w_buf[128];
+</main_volatile3>
+<main_volatile4>
+volatile uint32_t led_half_period = 30;
+</main_volatile4>
+<main_volatile5>
+uint32_t mcpwm_ch0_val[32];
+</main_volatile5>
+<main_volatile6>
+uint8_t read_buf[256];
+uint8_t write_buf[256];
+</main_volatile6>
+<main_volatile7_1>
+uint32_t PrescaleB1 = 1;
+uint32_t PeriodB1, Duty_tB1;
+</main_volatile7_1>
+<main_volatile7_2>
+uint32_t PrescaleT1 = 1;
+uint32_t PeriodT1, Duty_tT1;
+</main_volatile7_2>
+<main_volatile7_3>
+uint32_t Prescale10 = 10;
+uint32_t Period10, Duty_t10;
+</main_volatile7_3>
+<main_volatile9>
+
+</main_volatile9>
+<main_volatile10>
+volatile uint32_t systime_ms;
+</main_volatile10>
+<main_volatile11></main_volatile11>
+<main_volatile12></main_volatile12>
+<main_volatile13></main_volatile13>
+<main_volatile14></main_volatile14>
+<main_volatile15></main_volatile15>
+<main_volatile16></main_volatile16>
+</template>

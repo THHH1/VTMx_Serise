@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <app_c_include>include_usbd_usr|include_hid_core|include_stdio</app_c_include>
+    <app_c_extern>extern_susp</app_c_extern>
+    <app_c_USBD_Init>USBD_Init_HID_cb</app_c_USBD_Init>
+</template>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<key>main_include</key>
+<value>null</value>
+
+<key>main_define</key>
+<value>main_defineADC8Trigger</value>
+
+<key>main_volatile</key>
+<value>main_volatile1</value>
+
+<key>main_function</key>
+<value>main_functionADC8Trigger|main_function4|main_function5</value>
+
+<key>main_printf</key>
+<value>main_printf2</value>
+
+<key>main_body</key>
+<value>main_body4|main_body5|main_body6|main_body9|main_bodyADC8Trigger|main_body10|main_body11|main_body12|main_body13</value>
+
+<key>main_whilebody</key>
+<value>null</value>
+
+<key>main_funbody</key>
+<value>main_funbody4|main_funbody5|main_funbodyADC8Trigger</value>
+
+<key>main_Delay_ms</key>
+<value>null</value>
+
+<key>main_TIMER0_IRQHandler</key>
+<value>main_TIMER0_IRQHandler1</value>
+
+
+    <itkey>it_include</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_volatile</itkey>
+    <itvalue>it_volatile3</itvalue>
+    <itkey>it_function</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_SysTick_Handler</itkey>
+    <itvalue>it_SysTick_Handler2</itvalue>
+    <itkey>it_funbody</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_GPIO0_TO_GPIO3_IRQHandler</itkey>
+    <itvalue>null</itvalue> 
+    <itkey>it_ADC_IRQHandler</itkey>
+    <itvalue>it_ADC_IRQHandler_ADC_Trigger</itvalue>
+    
+
+</template>

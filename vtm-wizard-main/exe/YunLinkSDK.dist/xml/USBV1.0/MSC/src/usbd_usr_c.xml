@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_usr_c_define>null</usbd_usr_c_define>
+    <usbd_usr_c_var>null</usbd_usr_c_var>
+    <usbd_usr_c_USBD_USR_Init>null</usbd_usr_c_USBD_USR_Init>
+</template>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usb_bsp_c_include>include_cdc_vcp</usb_bsp_c_include>
+    <usb_bsp_c_define>null</usb_bsp_c_define>
+    <usb_bsp_c_USB_BSP_Init>null</usb_bsp_c_USB_BSP_Init>
+    <usb_bsp_c_USB_BSP_EnableInterrupt>USB_BSP_EnableInterrupt_USB_IT_PRIO</usb_bsp_c_USB_BSP_EnableInterrupt>
+    <USB_BSP_DevConnect>null</USB_BSP_DevConnect>
+</template>

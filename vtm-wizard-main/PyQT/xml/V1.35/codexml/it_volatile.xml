@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_volatile1>
+volatile uint16_t dac0_val = 0;
+</it_volatile1>
+<it_volatile2>
+volatile uint16_t dac1_val = 4095;
+</it_volatile2>
+<it_volatile3>
+extern volatile uint32_t systick_ms;
+</it_volatile3>
+<it_volatile4>
+extern volatile uint32_t led_half_period;
+</it_volatile4>
+<it_volatile5></it_volatile5>
+<it_volatile6></it_volatile6>
+</template>

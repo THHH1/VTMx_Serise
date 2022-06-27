@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_include1>
+#include "VTM071x_dac.h"
+</it_include1>
+</template>

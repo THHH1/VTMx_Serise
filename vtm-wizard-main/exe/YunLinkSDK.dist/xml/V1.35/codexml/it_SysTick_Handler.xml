@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_SysTick_Handler1>
+    static uint32_t flag = 0;
+    DAC_SetData(DAC0, dac0_val);
+    DAC_SetData(DAC1, dac1_val);
+    if (flag == 0)
+    {
+        dac0_val ++;
+        dac1_val --;
+        if (dac0_val == 4095)
+            flag = 1;
+    }
+    else
+    {
+        dac0_val --;
+        dac1_val ++;
+        if (dac0_val == 0)
+            flag = 0;
+    }
+</it_SysTick_Handler1>
+<it_SysTick_Handler2>
+    if (systick_ms != 0)
+        systick_ms--;
+</it_SysTick_Handler2>
+
+<it_SysTick_Handler3>
+static uint16_t val = 0;
+    static uint32_t fflag = 0;
+    DAC_SetData(DAC0, val);
+    DAC_SetData(DAC1, val);
+    if (fflag == 0)
+    {
+        val ++;
+        if (val == 4095)
+            fflag = 1;
+    }else
+    {
+        val --;
+        if (val == 0)
+            fflag = 0;
+    }
+</it_SysTick_Handler3>
+
+<it_SysTick_Handler4>
+</it_SysTick_Handler4>
+
+<it_SysTick_Handler5>
+</it_SysTick_Handler5>
+
+<it_SysTick_Handler6>
+</it_SysTick_Handler6>
+
+<it_SysTick_Handler7>
+</it_SysTick_Handler7>
+
+<it_SysTick_Handler8>
+</it_SysTick_Handler8>
+
+</template>

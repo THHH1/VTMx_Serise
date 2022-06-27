@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usb_conf_h_define>EP_NUM2|ENDP0_RX_ADDRESS|ENDP0_TX_ADDRESS|HID_IN_TX_ADDRESS</usb_conf_h_define>
+</template>

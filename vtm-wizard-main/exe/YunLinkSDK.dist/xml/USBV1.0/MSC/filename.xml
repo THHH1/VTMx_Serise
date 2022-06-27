@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <filename_c>app_c</filename_c>
+    <filename_c>system_VTM071x_c</filename_c>
+    <filename_c>usb_bsp_c</filename_c>
+    <filename_c>usbd_desc_c</filename_c>
+    <filename_c>usbd_pwr_c</filename_c>
+    <filename_c>usbd_storage_msd_c</filename_c>
+    <filename_c>usbd_usr_c</filename_c>
+    <filename_c>VTM071x_it_c</filename_c>
+
+    <filename_h>usb_conf_h</filename_h>
+    <filename_h>usbd_conf_h</filename_h>
+    <filename_h>usbd_desc_h</filename_h>
+    <filename_h>VTM071x_conf_h</filename_h>
+    <filename_h>VTM071x_it_h</filename_h>
+
+    <filename_uvprojx>demo_uvprojx</filename_uvprojx>
+
+</template>

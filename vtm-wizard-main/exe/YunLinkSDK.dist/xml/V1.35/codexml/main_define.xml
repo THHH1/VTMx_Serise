@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_define1_1>
+#define ADC_CLKDIV7	        7
+</main_define1_1>
+<main_define1_2>
+#define ADC_CLKDIV8	        8
+</main_define1_2>
+<main_define1_3>
+#define ADC_CLKDIV60	        60
+</main_define1_3>
+<main_define1_4>
+#define ADC_CLKDIV7LOOP	        7
+</main_define1_4>
+<main_defineADC8Trigger>
+#define ADC_CLKDIV8Trigger        8
+</main_defineADC8Trigger>
+<main_define3>
+#define BOOT_FROM_LDROM
+
+#ifdef  BOOT_FROM_LDROM
+    #define FLASH_TEST_APROM_ADDR     0x10000000
+    #define FLASH_TEST_LDROM_ADDR     0x1e00
+#else
+    #define FLASH_TEST_APROM_ADDR     0x10000
+    #define FLASH_TEST_LDROM_ADDR     0x10000000
+#endif
+</main_define3>
+<main_define4>
+#define EEPROM_ADDRESS      64
+</main_define4>
+<main_define5>
+#define PWM_MODE_0      (0UL)
+</main_define5>
+<main_define6>
+#define PWM_MODE_1      (1UL)
+</main_define6>
+<main_define7>
+#define PI  3.14159
+</main_define7>
+<main_define8>
+#define CLOCK_PER_US        (SystemCoreClock / 1000000)
+</main_define8>
+
+<main_define10>
+#define USART0_CLOCK_DIV	1
+</main_define10>
+<main_define11>
+
+</main_define11>
+
+
+</template>

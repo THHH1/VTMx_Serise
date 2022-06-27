@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_funbody1>
+void DAC_Configuration(void)						  
+{
+    DAC_InitTypeDef DAC_InitStructure;
+
+    RCC_PDRUNConfig(RCC_PDCFG_DAC0, RCC_PDCFG_POWER_ON);
+    RCC_PDRUNConfig(RCC_PDCFG_DAC1, RCC_PDCFG_POWER_ON);
+
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_DACCLK, 128);
+    
+    RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL1_DAC, ENABLE);
+    DAC_DeInit();
+    
+    GPIO_ANAConfig(GPIO4, GPIO_Pin_4, ENABLE);
+    GPIO_ANAConfig(GPIO4, GPIO_Pin_5, ENABLE);
+    
+    DAC_InitStructure.DAC_ReferenceVoltage = DAC_REF_VOLTAGE_VDDA;
+    DAC_InitStructure.DAC_OutputBuffer = DAC_OutputBuffer_Disable;
+    DAC_InitStructure.DAC_Trigger = DAC_Trigger_WRITE_DATA;
+    DAC_Init(DAC0, &amp;DAC_InitStructure);
+    DAC_Init(DAC1, &amp;DAC_InitStructure);
+    
+    DAC_Cmd(DAC0, ENABLE);
+    DAC_Cmd(DAC1, ENABLE);
+}
+</main_funbody1>
+<main_funbody2>
+void ACMP_Configuration(void)						  
+{
+    ACMP_InitTypeDef ACMP_InitStruct;
+    NVIC_InitTypeDef NVIC_InitStructure;
+    
+    NVIC_InitStructure.NVIC_IRQChannel = ACMP_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&amp;NVIC_InitStructure);
+	
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_4, ENABLE);
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_5, ENABLE);
+    
+    RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ACMP, ENABLE);
+    ACMP_DeInit();
+    ACMP_InitStruct.ACMP_PositiveSelect = ACMP_POSITIVE_SELECT_PIN;
+    ACMP_InitStruct.ACMP_NegativeSelect = ACMP_NEGATIVE_SELECT_PIN;
+    ACMP_InitStruct.ACMP_Output = ACMP_OUTPUT_ENABLE;
+    ACMP_InitStruct.ACMP_Hysteresis = ACMP_HYSTERESIS_20MV;
+    ACMP_Init(ACMP2, &amp;ACMP_InitStruct);
+    
+    ACMP0_PinConfig(ACMP2_PIN_GPIO04_GPIO05);
+    
+    ACMP_ITConfig(ACMP2, ENABLE);
+    ACMP_Cmd(ACMP2, ENABLE);
+}
+</main_funbody2>
+<main_funbody3_1>
+void ADC_Configuration7(void)		                       //变量ADC_Configuration
+{
+   uint32_t delay=0;																															//
+	ADC_InitTypeDef ADC_InitStructure;																							//结构体
+	NVIC_InitTypeDef NVIC_InitStructure;																						//结构体
+
+    /* PowerDown digital function */
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_0, ENABLE);																		//配置GPIO0_0模拟功能
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_1, ENABLE);																		//配置GPIO0_1模拟功能
+    
+    /* Enable ADC interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;																	//使能ADC_IRQn通道												
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;																	//指定IRQ通道优先级为0（值在0-3之间）
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;																	//使能NVIC_IRQChannel中定义的IRQ通道
+	NVIC_Init(&amp;NVIC_InitStructure);																									//初始化NVIC
+	
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);															//使能RCC_PDCFG_ADC！！！！！
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV7 * 14) */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV7);														//设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);															//使能ADC时钟
+    
+    /* DeInit */
+	ADC_DeInit();																																		//将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);																							//将默认值填充每个ADC_InitStruct成员
+	ADC_Init(&amp;ADC_InitStructure);																										//初始化ADC
+    
+    /* Disable discontinuous mode */
+	ADC_DiscModeCmd(DISABLE);																												//为所选通道关闭间断模式
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);																											//为所选通道启用溢出模式
+    
+    /* Enable channle 0 1 */
+	ADC_ChannelConfig(ADC_Channel_0 | ADC_Channel_1);																//使能channle 0和使能channle 1
+    
+    /* ADC EOSEQ interrupt */
+	ADC_ITConfig(ADC_IT_EOSEQ, ENABLE);																							//使能中断
+
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++);
+}</main_funbody3_1>
+<main_funbody3_2>
+void ADC_Configuration8(void)		                       //变量ADC_Configuration
+{
+    uint32_t delay=0;		                               //
+	ADC_InitTypeDef ADC_InitStructure;		               //结构体
+	NVIC_InitTypeDef NVIC_InitStructure;		             //结构体
+
+    /* PowerDown digital function */
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_0, ENABLE);		     //配置GPIO模拟功能！！！！
+    
+    /* Enable ADC interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;		   //使能ADC_IRQn通道  
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;		   //指定IRQ通道优先级为0（值在0-3之间）
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;		   //使能NVIC_IRQChannel中定义的IRQ通道
+	NVIC_Init(&amp;NVIC_InitStructure);		                   //初始化NVIC
+	
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);	 //使能RCC_PDCFG_ADC！！！！！
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV * 14) */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV8); //设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);	 //使能ADC时钟
+    
+    /* DeInit */
+	ADC_DeInit();		                                     //将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);		               //将默认值填充每个ADC_InitStruct成员
+	ADC_Init(&amp;ADC_InitStructure);		                     //初始化ADC
+
+    /* Discontinuous mode */
+	ADC_DiscModeCmd(ENABLE);		                         //为所选通道启用间断模式
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);		                       //为所选通道启用溢出模式
+    
+    /* Analog watchdog 1000-3000, Channel 0 */
+    ADC_AnalogWatchdogThresholdsConfig((uint16_t)3000, (uint16_t)1000);
+    ADC_AnalogWatchdogSingleChannelConfig(ADC_AnalogWatchdog_Channel_0);
+    ADC_AnalogWatchdogSingleChannelCmd(ENABLE);
+	ADC_AnalogWatchdogCmd(ENABLE);													
+
+    /* Enable channle 0 */
+	ADC_ChannelConfig(ADC_Channel_0);		                 //使能channle 0
+    
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++){;}							 //
+    
+    /* Start Conversion */
+    ADC_StartOfConversion();		                       //开始转换
+    
+    /* ADC EOC interrupt */
+	ADC_ITConfig(ADC_IT_EOC, ENABLE);		                 //使能中断
+
+    /* ADC AWD interrupt */
+	ADC_ITConfig(ADC_IT_AWD, ENABLE);		                 //使能中断
+}</main_funbody3_2>
+<main_funbody3_3>
+void ADC_Configuration60(void)		                       //变量ADC_Configuration
+{
+    uint32_t delay=0;		                               //
+	ADC_InitTypeDef ADC_InitStructure;		               //结构体
+	NVIC_InitTypeDef NVIC_InitStructure;		             //结构体
+
+    /* PowerDown digital function */
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_0, ENABLE);		     //配置GPIO模拟功能！！！！
+    
+    /* Enable ADC interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;		   //使能ADC_IRQn通道  
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;		   //指定IRQ通道优先级为0（值在0-3之间）
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;		   //使能NVIC_IRQChannel中定义的IRQ通道
+	NVIC_Init(&amp;NVIC_InitStructure);		                   //初始化NVIC
+	
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);	 //使能RCC_PDCFG_ADC！！！！！
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV * 14) */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV60); //设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);	 //使能ADC时钟
+    
+    /* DeInit */
+	ADC_DeInit();		                                     //将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);		               //将默认值填充每个ADC_InitStruct成员
+	ADC_Init(&amp;ADC_InitStructure);		                     //初始化ADC
+
+    /* Discontinuous mode */
+	ADC_DiscModeCmd(ENABLE);		                         //为所选通道启用间断模式
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);		                       //为所选通道启用溢出模式
+    
+    /* Analog watchdog 1000-3000, Channel 0 */
+    ADC_AnalogWatchdogThresholdsConfig((uint16_t)3000, (uint16_t)1000);
+    ADC_AnalogWatchdogSingleChannelConfig(ADC_AnalogWatchdog_Channel_0);
+    ADC_AnalogWatchdogSingleChannelCmd(ENABLE);
+	ADC_AnalogWatchdogCmd(ENABLE);													
+
+    /* Enable channle 0 */
+	ADC_ChannelConfig(ADC_Channel_0);		                 //使能channle 0
+    
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++){;}							 //
+    
+    /* Start Conversion */
+    ADC_StartOfConversion();		                       //开始转换
+    
+    /* ADC EOC interrupt */
+	ADC_ITConfig(ADC_IT_EOC, ENABLE);		                 //使能中断
+
+    /* ADC AWD interrupt */
+	ADC_ITConfig(ADC_IT_AWD, ENABLE);		                 //使能中断
+}</main_funbody3_3>
+<main_funbody3_5>
+void ADC_Configuration60ChipTemp(void)		                       //变量ADC_Configuration
+{
+    uint32_t delay=0;																				
+	ADC_InitTypeDef ADC_InitStructure;																		//结构体
+	NVIC_InitTypeDef NVIC_InitStructure;																	//结构体
+    
+    /* Enable ADC interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;                        //使能ADC_IRQn通道
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;												//指定IRQ通道优先级为0（值在0-3之间）
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;												//使能NVIC_IRQChannel中定义的IRQ通道
+	NVIC_Init(&amp;NVIC_InitStructure);																				//初始化NVIC
+	
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);										//使能RCC_PDCFG_ADC！！！！！
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV * 14) = 100K */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV60);									//设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);              			//使能ADC时钟
+    
+    /* DeInit */
+	ADC_DeInit();                                                         //将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);                                   //将默认值填充每个ADC_InitStruct成员
+    ADC_InitStructure.ADC_Discard0 = ADC_Discard0_1;                    //指定首次转换时丢弃的值
+	ADC_Init(&amp;ADC_InitStructure);                                         //初始化ADC
+    
+    /* Discontinuous mode */
+	ADC_DiscModeCmd(ENABLE);																							//为所选通道启用间断模式
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);																						//为所选通道启用溢出模式
+    
+    /* Temperature Sensor must be enabled before ADC channel*/
+    ADC_TempSensorCmd(ENABLE);                                          //使能温度传感器通道
+    
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++);                                 //for循环
+    
+    /* Enable channle 15 */
+	ADC_ChannelConfig(ADC_Channel_15);                                    //使能channle 15
+    
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++);
+    
+    /* ADC EOC interrupt */
+	ADC_ITConfig(ADC_IT_EOC, ENABLE);		
+}</main_funbody3_5>
+<main_funbody3_4>
+void ADC_Configuration7LOOP(void)		                       //变量ADC_Configuration
+{
+    uint32_t delay=0;                                                           //
+    
+	ADC_InitTypeDef ADC_InitStructure;																						//结构体
+
+    /* PowerDown digital function */
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_0, ENABLE);																	//配置GPIO0_0模拟功能
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_1, ENABLE);																	//配置GPIO0_1模拟功能
+
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);														//使能RCC_PDCFG_ADC！！！！！								
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV7LOOP * 14) */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV7LOOP);													//设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);														//使能ADC闹钟
+    
+    /* DeInit */
+	ADC_DeInit();																																	//将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);																						//将默认值填充每个ADC_InitStruct成员
+	ADC_Init(&amp;ADC_InitStructure);																									//初始化ADC
+    
+    /* Continuous mode */
+	ADC_DiscModeCmd(DISABLE);																											//为所选通道关闭间断模式																								
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);																										//为所选通道启用溢出模式
+    
+    /* Enable channle 0 1 */
+	ADC_ChannelConfig(ADC_Channel_0 | ADC_Channel_1);															//使能channle 0，channle 1
+    
+    /* ADC EOSEQ interrupt */
+	ADC_ITConfig(ADC_IT_EOSEQ, ENABLE);																						//使能ADC_IT_EOSEQ中断
+
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++);			
+}</main_funbody3_4>
+<main_funbodyADC8Trigger>
+void ADC_Configuration8Trigger(void)		                       //变量ADC_Configuration
+{
+    uint32_t delay=0;
+	ADC_InitTypeDef ADC_InitStructure;																										//结构体										
+	NVIC_InitTypeDef NVIC_InitStructure;																									//结构体
+
+    /* PowerDown digital function */
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_0, ENABLE);																					//配置GPIO0_0模拟功能
+    GPIO_ANAConfig(GPIO0, GPIO_Pin_1, ENABLE);																					//配置GPIO0_1模拟功能
+    
+    /* Enable ADC interrupt */
+	NVIC_InitStructure.NVIC_IRQChannel = ADC_IRQn;																				//使能ADC_IRQn通道
+	NVIC_InitStructure.NVIC_IRQChannelPriority = 0;																				//指定IRQ通道优先级为0（值在0-3之间）
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;																				//使能NVIC_IRQChannel中定义的IRQ通道
+	NVIC_Init(&amp;NVIC_InitStructure);																												//初始化NVIC
+	
+    /* PownOn ADC Analog switch */
+	RCC_PDRUNConfig(RCC_PDCFG_ADC, RCC_PDCFG_POWER_ON);																		//使能RCC_PDCFG_ADC
+    
+    /* ADC clock -- Main clock / (ADC_CLKDIV * 14) */
+	RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, ADC_CLKDIV8Trigger);																	//设置时钟分频因子
+    
+    /* PowerOn ADC clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_ADC, ENABLE);																		//使能ADC时钟
+    
+    /* DeInit */
+	ADC_DeInit();																																					//将ADC外设寄存器初始化为其默认重置值
+
+    /* Initialize */
+	ADC_StructInit(&amp;ADC_InitStructure);																										//将默认值填充每个ADC_InitStruct成员
+    
+    /* TIMER0 MAT0 rising edge trigger ADC */
+    ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_Rising;
+    ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T0_IRQ;
+	ADC_Init(&amp;ADC_InitStructure);
+
+    /* Discontinuous mode */
+	ADC_DiscModeCmd(DISABLE);																															//为所选通道关闭间断模式
+    
+    /* Cover previous data */
+	ADC_OverrunModeCmd(ENABLE);																														//为所选通道启用溢出模式
+    
+    /* Enable channle 0 1 */
+	ADC_ChannelConfig(ADC_Channel_0|ADC_Channel_1);																				//使能channle_0和channle_1
+    
+    /* Delay ms */
+	for (delay=0; delay&lt;0x2000; delay++){;}																								//for循环
+    
+    /* Start Conversion */
+    ADC_StartOfConversion();																														//开始转换
+    
+    /* ADC EOSEQ interrupt */
+	ADC_ITConfig(ADC_IT_EOSEQ, ENABLE);																										//使能中断	
+}</main_funbodyADC8Trigger>
+<main_funbody4>
+void Timer_Init(TIMER_TypeDef* TIMERx, uint32_t Prescale)
+ {
+    if (TIMERx == TIMER0)
+        RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_TIMER0, ENABLE);
+    else if (TIMERx == TIMER1)
+        RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_TIMER1, ENABLE);
+    else if (TIMERx == TIMER2)
+        RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_TIMER2, ENABLE);
+    else
+        RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_TIMER3, ENABLE);
+
+    TIMER_DeInit(TIMERx);
+    TIMER_SetPrescale(TIMERx, Prescale - 1);
+}</main_funbody4>
+<main_funbody5>
+void Timer_Config_T(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us)
+{
+    TIMER_InitTypeDef TIMER_InitStructure;																							//结构体
+
+    Timer_Init(TIMER0, 1);
+
+    us = us / (TIMER_GetPrescale(TIMERx) + 1);     
+
+    if (us > 44739242)
+        us = 44739242;
+
+    TIMER_InitStructure.TIMER_Channel = Channel;																				
+    TIMER_InitStructure.TIMER_Dir = TIMER_DIR_INCREASE;
+    TIMER_InitStructure.TIMER_MatchValue = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * us - 1;
+    TIMER_InitStructure.TIMER_MatchAction = TIMER_MatchAction_HOLD;
+    TIMER_InitStructure.TIMER_MatchConfig = TIMER_MatchConfig_RESET_TC;
+    TIMER_Init(TIMERx, &amp;TIMER_InitStructure);
+    
+    TIMER_ITConfig(TIMERx, TIMER_IT_MR0I, ENABLE);
+    NVIC_EnableIRQ(TIMER0_IRQn);
+
+    TIMER_Cmd(TIMERx, Channel, ENABLE);
+}</main_funbody5>
+<main_funbody6>
+</main_funbody6>
+<main_funbody7>
+void PowerDown(void)
+{
+	RCC->PCON = 0x2;
+	SCB->SCR = 0x4;
+	__WFI();
+}</main_funbody7>
+<main_funbody8>
+void DeepSleep(void)
+{
+	RCC->PCON = 0x10000;
+	SCB->SCR = 0x4;
+	__WFI();
+}</main_funbody8>
+<main_funbody9>
+</main_funbody9>
+<main_funbody10>
+void LED_Init(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);
+    GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_SET);
+    GPIO_WriteBit(GPIO6, GPIO_Pin_5, Bit_SET);
+}</main_funbody10>
+<main_funbody11>
+void LED_Toggle(void)																																		//变量LED_Toggle
+{
+    static BitAction flag = Bit_SET;																										//
+    
+    GPIO_WriteBit(GPIO6, GPIO_Pin_4, flag);																							//
+    GPIO_WriteBit(GPIO6, GPIO_Pin_5, flag);
+    
+    if (flag ==  Bit_SET)
+        flag = Bit_RESET;
+    else
+        flag = Bit_SET;
+}</main_funbody11>
+<main_funbody12>
+void DeepSleep_Configuration(void)																											//配置DeepSleep
+{
+    int i;
+    GPIO_InitTypeDef GPIO_InitStructure; 																								//结构体
+
+    /* GPIO */
+    //TODO: INPUT pull-down
+    GPIOBANK0->DIR_CLR = 0xFFFFFFFF;																										//
+    GPIOBANK1->DIR_CLR = 0xFFFFFFFF;
+
+    for (i=0; i&lt;56; i++)
+    {
+        *(volatile uint32_t *)(0x40001000+i*4) = 0x88;
+    }
+    
+    /* Wakeup IO */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;																						//GPIO1_0
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;																	//频率高50MHz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;																				//输入模式
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;																			//输入下拉
+    GPIO_Init(GPIO1, &amp;GPIO_InitStructure);																							//GPIO1
+    GPIO_ClearITPendingBit(GPIO1, GPIO_Pin_0);																					//清除GPIO的中断挂起位
+    GPIO_ITConfig(GPIO1, GPIO_Pin_0, GPIO_IT_EDGE_RISING, ENABLE);
+    NVIC_EnableIRQ(GPIO0_TO_GPIO3_IRQn);
+
+    /* Digital */
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_USART0CLK, 0);																			//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_USART1CLK, 0);																			//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_SYSTICKCLK, 0);																			//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_SPI0CLK, 0);																	  		//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_SPI1CLK, 0);																				//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_WWDGCLK, 0);																				//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_CLKOUTCLK, 0);																			//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_ADCCLK, 0);																					//设置时钟分频因子
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_DACCLK, 0);																					//设置时钟分频因子
+    SysTick->CTRL = 0;
+
+    RCC->AHBCLKCTRL0 = RCC_AHBCLKCTRL_IOCON | RCC_AHBCLKCTRL_ROM | \
+                       RCC_AHBCLKCTRL_GPIO | RCC_AHBCLKCTRL_RAM | \
+                       RCC_AHBCLKCTRL_FLASH;
+    RCC->AHBCLKCTRL1 = 0;
+    
+    RCC_SETCLKDivider(RCC_CLOCKFREQ_SYSAHBCLK, 10);																			//设置时钟分频因子
+    
+    /* Analog */
+    RCC_PDAWAKEConfig(RCC_PDCFG_OSC12M | RCC_PDCFG_ADC | RCC_PDCFG_BOD | \
+                      RCC_PDCFG_ACMP | RCC_PDCFG_USB | RCC_PDCFG_32768_OSC | \
+                      RCC_PDCFG_DAC0 | RCC_PDCFG_DAC1 | RCC_PDCFG_USB_LDO | \
+                      RCC_PDCFG_BOR, RCC_PDCFG_POWER_DOWN);
+    RCC_PDAWAKEConfig(RCC_PDCFG_IRC12M | RCC_PDCFG_FLASH, RCC_PDCFG_POWER_ON);
+
+    RCC_BORConfig(RCC_BORRST_VAL_2_2, DISABLE);
+
+    RCC_PDSLEEPConfig(RCC_PDCFG_OSC12M | RCC_PDCFG_ADC | RCC_PDCFG_BOD | \
+                      RCC_PDCFG_ACMP | RCC_PDCFG_USB | RCC_PDCFG_32768_OSC | \
+                      RCC_PDCFG_DAC0 | RCC_PDCFG_DAC1 | RCC_PDCFG_USB_LDO | \
+                      RCC_PDCFG_BOR | RCC_PDCFG_IRC12M | RCC_PDCFG_FLASH | \
+                      RCC_PDCFG_SYSPLL, RCC_PDCFG_POWER_DOWN);
+
+    /* PowerDown USB and Reset */
+    RCC->PDRUNCFG |= (1&lt;&lt;10);
+    RCC_APBPeriphResetCmd(RCC_AHBCLKCTRL_USB, ENABLE);
+    RCC_APBPeriphResetCmd(RCC_AHBCLKCTRL_USB, DISABLE);
+	
+    /* Switch to 10K IRC */
+    RCC_MAINCLKSel(RCC_MAINCLK_SOURCE_10K_IRC);
+
+    /* Delay */
+    for (i=0; i&lt;10; i++);
+
+    /* Deep Sleep */
+    DeepSleep();
+}</main_funbody12>
+
+<main_funbody15>
+void PowerDown_Configuration(void)																			
+{
+    int i;																									
+
+    /* GPIO */
+    //TODO: INPUT pull-down
+    GPIOBANK0->DIR_CLR = 0xFFFFFFFF;
+    GPIOBANK1->DIR_CLR = 0xFFFFFFFF;
+
+    for (i=0; i&lt;8; i++)
+    {
+        *(volatile uint32_t *)(0x40001000+i*4) = 0x88;
+    }
+    for (i=9; i&lt;51; i++)
+    {
+        *(volatile uint32_t *)(0x40001000+i*4) = 0x88;
+    }
+    for (i=51; i&lt;53; i++)
+    {
+        *(volatile uint32_t *)(0x40001000+i*4) = 0x90;
+    }
+    for (i=53; i&lt;55; i++)
+    {
+        *(volatile uint32_t *)(0x40001000+i*4) = 0x88;
+    }
+    
+    /* Wakeup IO */
+    RCC_WakeupPinCmd(RCC_WAKEUP_GPIO1_0, ENABLE);																//启用唤醒功能
+    
+    /* Delay */
+    for (i=0; i&lt;10; i++);
+
+    /* PowerDown */
+    PowerDown();
+}</main_funbody15>
+<main_funbody16>
+void APROM_Erase(uint32_t flash_addr)
+{
+    FLASH_CacheCmd(DISABLE);
+    FLASH_FlushCacheCmd(ENABLE);
+    FLASH_Unlock();
+    FLASH_EraseAPROM(flash_addr);
+    FLASH_Lock();
+    FLASH_FlushCacheCmd(DISABLE);
+    FLASH_CacheCmd(ENABLE);
+}</main_funbody16>
+<main_funbody17>
+void APROM_ProgramData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ProgramSize)
+{
+    FLASH_CacheCmd(DISABLE);
+    FLASH_FlushCacheCmd(ENABLE);
+    FLASH_Unlock();
+    FLASH_ProgramAPROM(SramBuf, FlashAddr, ProgramSize);
+    FLASH_Lock();
+    FLASH_FlushCacheCmd(DISABLE);
+    FLASH_CacheCmd(ENABLE);
+}</main_funbody17>
+<main_funbody18>
+void Flash_ReadData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ReadSize)
+{
+    uint32_t i;
+    for (i=0; i&lt;(ReadSize >> 2); i++)
+    {
+        *(SramBuf + i) = *(volatile uint32_t *)(FlashAddr + i * 4);
+    }
+}</main_funbody18>
+<main_funbody19>
+void LDROM_Erase(uint32_t flash_addr)
+{
+    FLASH_CacheCmd(DISABLE);
+    FLASH_FlushCacheCmd(ENABLE);
+    FLASH_Unlock();
+    FLASH_EraseLDROM(flash_addr);
+    FLASH_Lock();
+    FLASH_FlushCacheCmd(DISABLE);
+    FLASH_CacheCmd(ENABLE);
+}</main_funbody19>
+<main_funbody20>
+void LDROM_ProgramData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ProgramSize)
+{
+    FLASH_CacheCmd(DISABLE);
+    FLASH_FlushCacheCmd(ENABLE);
+    FLASH_Unlock();
+    FLASH_ProgramLDROM(SramBuf, FlashAddr, ProgramSize);
+    FLASH_Lock();
+    FLASH_FlushCacheCmd(DISABLE);
+    FLASH_CacheCmd(ENABLE);
+}</main_funbody20>
+<main_funbody21>
+void GPIO_Configuration(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;																						//构建结构体USART_InitStructure
+    
+    /* LED */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;																				//构建结构体USART_InitStructure
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;															//设置频率为50Mhz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;																		//设置模式为输出模式
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;																//设置模式为浮空输入模式
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);																					//GPIO6_4
+    
+    /* LED */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;																				//使能GPIO_Pin_5
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);																					//GPIO6_5
+    
+    /* Key */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;																				//使能GPIO1_0
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;															//设置频率为50Mhz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;																		//设置模式为输入模式
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_DOWN;																	//设置模式为输入下拉模式
+    GPIO_Init(GPIO1, &amp;GPIO_InitStructure);																					//GPIO1_0
+    
+    NVIC_EnableIRQ(GPIO0_TO_GPIO3_IRQn);																						//中断
+
+    GPIO_ITConfig(GPIO1, GPIO_Pin_0, GPIO_IT_EDGE_RISING, ENABLE);									//指定GPIO1_0 启用中断
+}</main_funbody21>
+<main_funbody22>
+void MCPWM_Stop(uint32_t MCPWM_Channel_COM)
+{
+    /* 绛夊緟杩欎釜鍛ㄦ湡缁撴潫 */
+    if (MCPWM_Channel_COM &amp; MCPWM_CHANNEL_0)													
+    {
+        MCPWM->INTF_CLR = MCPWM_IT_ILIM0;
+        while ((MCPWM->INTF &amp; MCPWM_IT_ILIM0) == 0);
+    }
+    else if (MCPWM_Channel_COM &amp; MCPWM_CHANNEL_1)
+    {
+        MCPWM->INTF_CLR = MCPWM_IT_ILIM1;
+        while ((MCPWM->INTF &amp; MCPWM_IT_ILIM1) == 0);
+    }
+    else if (MCPWM_Channel_COM &amp; MCPWM_CHANNEL_2)
+    {
+        MCPWM->INTF_CLR = MCPWM_IT_ILIM2;
+        while ((MCPWM->INTF &amp; MCPWM_IT_ILIM2) == 0);
+    }
+    
+    /* 鍏抽棴MCPWM */
+    MCPWM_Cmd(MCPWM_Channel_COM, DISABLE);
+}</main_funbody22>
+<main_funbody23>
+</main_funbody23>
+<main_funbody24>
+</main_funbody24>
+<main_funbody25>
+void MCPWM_Configuration(void)
+{
+	GPIO_InitTypeDef GPIO_InitStructure;
+    MCPWM_InitTypeDef MCPWM_InitStructure;
+
+    // MC0A0--GPIO2-6
+    // MC0A1--GPIO2-0
+    // MC0A2--GPIO2-1
+    // MC0B0--GPIO3-1
+    // MC0B1--GPIO3-2
+    // MC0B2--GPIO3-3
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;																		//GPIO2_6
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;													//棰戠巼楂?0MHz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_2;															//澶囩敤鍔熻兘妯″紡2
+    GPIO_Init(GPIO2, &amp;GPIO_InitStructure);																			//GPIO2
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;																		//GPIO2_0
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_1;															//澶囩敤鍔熻兘妯″紡1
+    GPIO_Init(GPIO2, &amp;GPIO_InitStructure);																			//GPIO2
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;																		//GPIO2_1
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_1;															//澶囩敤鍔熻兘妯″紡1
+    GPIO_Init(GPIO2, &amp;GPIO_InitStructure);																			//GPIO2
+    
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;																		//GPIO3_1
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_3;															//澶囩敤鍔熻兘妯″紡3
+    GPIO_Init(GPIO3, &amp;GPIO_InitStructure);																			//GPIO3
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;																		//GPIO3_2
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_3;															//澶囩敤鍔熻兘妯″紡3
+    GPIO_Init(GPIO3, &amp;GPIO_InitStructure);																			//GPIO3
+
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;																		//GPIO3_3
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_3;															//澶囩敤鍔熻兘妯″紡3
+    GPIO_Init(GPIO3, &amp;GPIO_InitStructure);																			//GPIO3_3
+												//
+    /* MCPWM Clock */
+    RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_MCPWM, ENABLE);												//浣胯兘MCPWM鏃堕挓
+    MCPWM_DeInit();																															//鍒濆鍖朚CPWM
+
+    /* Channel0 100KHz, Duty 60% */
+    MCPWM_InitStructure.MCPWM_Channel = MCPWM_CHANNEL_0;												//閫氶亾0
+    MCPWM_InitStructure.MCPWM_Match = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 2 - 1; //2us
+    MCPWM_InitStructure.MCPWM_Limit = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 5 - 1; //5us
+    MCPWM_InitStructure.MCPWM_DeadTime = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 / 2 - 1;  //0.5us
+    MCPWM_InitStructure.MCPWM_Center = MCPWM_CENTER_CA;													//涓績瀵归綈杈瑰榻?
+    MCPWM_InitStructure.MCPWM_Update = MCPWM_Update_EN;													//鎸囧畾鏇存柊鐨勫弬鏁?
+    MCPWM_InitStructure.MCPWM_Polarity = MCPWM_Polarity_ILAH;										//MCPWM鏋佹€?
+    MCPWM_Init(&amp;MCPWM_InitStructure);																						//MCPWM
+
+    /* Channel1 100KHz, Duty 40% */
+    MCPWM_InitStructure.MCPWM_Channel = MCPWM_CHANNEL_1;												//閫氶亾1
+    MCPWM_InitStructure.MCPWM_Match = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 3 - 1; //3us
+    MCPWM_InitStructure.MCPWM_Limit = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 5 - 1; //5us
+    MCPWM_InitStructure.MCPWM_DeadTime = 0;
+    MCPWM_InitStructure.MCPWM_Center = MCPWM_CENTER_CA;													//涓績瀵归綈杈瑰榻?
+    MCPWM_InitStructure.MCPWM_Update = MCPWM_Update_EN;													//鎸囧畾鏇存柊鐨勫弬鏁?
+    MCPWM_InitStructure.MCPWM_Polarity = MCPWM_Polarity_ILAH;										//MCPWM鏋佹€?
+    MCPWM_Init(&amp;MCPWM_InitStructure);																						//MCPWM
+
+    /* Channel2 200KHz, Duty 60% */
+    MCPWM_InitStructure.MCPWM_Channel = MCPWM_CHANNEL_2;												//閫氶亾2
+    MCPWM_InitStructure.MCPWM_Match = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 2 - 1; //2us
+    MCPWM_InitStructure.MCPWM_Limit = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * 5 - 1; //5us
+    MCPWM_InitStructure.MCPWM_DeadTime = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 / 2 - 1;  //0.5us
+    MCPWM_InitStructure.MCPWM_Center = MCPWM_CENTER_EA;													//涓績瀵归綈杈瑰榻?
+    MCPWM_InitStructure.MCPWM_Update = MCPWM_Update_EN;													//鎸囧畾鏇存柊鐨勫弬鏁?
+    MCPWM_InitStructure.MCPWM_Polarity = MCPWM_Polarity_ILAH;										//MCPWM鏋佹€?
+    MCPWM_Init(&amp;MCPWM_InitStructure);																						//MCPWM
+
+    MCPWM_Cmd(MCPWM_CHANNEL_0 | MCPWM_CHANNEL_1 | MCPWM_CHANNEL_2, ENABLE);			//浣胯兘MCPWM閫氶亾0锛孧CPWM閫氶亾1锛孧CPWM閫氶亾2
+}</main_funbody25>
+<main_funbody26>
+void Delay_cycles(uint32_t cycles)
+{
+    while(cycles--)
+        __NOP();
+}</main_funbody26>
+<main_funbody27>
+void RTC_Configuration(void)
+{
+    RTC_InitTypeDef RTC_InitStructure;																					//结构体
+    
+	/* RTC Clock */
+	RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_RTC, ENABLE);														//启用RTC时钟
+
+    /* DeInit */
+    RTC_DeInit();																																//初始化RTC
+
+    /* RTC register can be write */
+    RTC_LoadCmd(ENABLE);																												//将RTC寄存器变为可写状态
+    
+    /* Select IRC 12M, Set default value to 100s */
+    RTC_InitStructure.RTC_ClkSource = RTC_CTRL_CLK_SEL_IRC12M;									//指定RTC时钟源为IRC 12M
+    RTC_InitStructure.RTC_Second = 100;																					//选择初始值为100s
+    RTC_Init(&amp;RTC_InitStructure);																								//根据指定初始化RTC的外设
+    
+    /* Alarm 110s */
+    RTC_AlarmConfig(110);																												//设置RTC的时钟在第110s提醒
+    
+    /* Enable HZ and Alarm interrupt */
+    RTC_ITConfig(RTC_IT_SEC | RTC_IT_ALARM, ENABLE);														//启用HZ和闹钟中断
+    
+    /* Enable RTC */
+    RTC_Cmd(ENABLE);																														//启动RTC计时器
+    
+    /* Disable load bit*/
+    RTC_LoadCmd(DISABLE);																												//禁用RTC加载位
+    
+    /* Enable RTC NVIC */
+    NVIC_EnableIRQ(RTC_IRQn);																										//启用外部中断
+}</main_funbody27>
+<main_funbody28>
+void PWM_Standby(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Period, uint32_t Duty_t, uint32_t Mode)
+{
+    PWM_InitTypeDef PWM_InitStructure;
+
+    if (Mode == PWM_MODE_0)
+    {
+        TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_LOW); 												 		//榛樿鐘舵€佷负浣庣數骞?
+        TIMER_SetMatchDefaultLevel(TIMERx, Channel, Timer_MATCH_DEFAULT_LEVEL_LOW);  					//榛樿鐘舵€佷负浣庣數骞?
+        PWM_InvertCmd(TIMERx, Channel, DISABLE);                    													//PWM鍏堜綆鍚庨珮
+        Duty_t = Period - Duty_t;
+    }
+    else
+    {
+        TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_HIGH);														//榛樿鐘舵€佷负楂樼數骞?
+        TIMER_SetMatchDefaultLevel(TIMERx, Channel, Timer_MATCH_DEFAULT_LEVEL_HIGH); 					//榛樿鐘舵€佷负楂樼數骞?
+        PWM_InvertCmd(TIMERx, Channel, ENABLE);                     													//PWM鍏堥珮鍚庝綆
+    }
+
+    PWM_InitStructure.TIMER_Channel = Channel;                          											//閫氶亾1
+    PWM_InitStructure.PWM_Threshold = Duty_t - 1;                       											//鍗犵┖姣?
+    PWM_InitStructure.PWM_MatchValue = Period - 1;                     												//鍛ㄦ湡
+    PWM_InitStructure.PWM_ValidState = PWM_ValidState_HIGH_LEVEL;       											//鏈夋晥鐢靛钩涓洪珮鐢靛钩
+    PWM_InitStructure.PWM_InvalidState = PWM_InvalidState_LOW_LEVEL;    											//鏃犳晥鐢靛钩涓轰綆鐢靛钩
+    PWM_Init(TIMERx, &amp;PWM_InitStructure);                              								 				//鍒濆鍖?
+}</main_funbody28>
+<main_funbody29>
+void PWM_OutDuty(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Period, uint32_t Duty, uint32_t Mode)
+{
+    if (Mode == PWM_MODE_0)
+    {
+        if (Duty == 0)
+        {
+            TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_LOW);  											//榛樿鐘舵€佷负浣庣數骞?
+            TIMER_Cmd(TIMERx, Channel, DISABLE);																							//鍏抽棴瀹氭椂鍣?
+        }
+        else if (Duty == Period)
+        {
+            TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_HIGH);  											//榛樿鐘舵€佷负楂樼數骞?
+            TIMER_Cmd(TIMERx, Channel, DISABLE);																							//鍏抽棴瀹氭椂鍣?
+        }
+        else
+        {
+            Duty = Period - Duty;
+            
+            PWM_SetPWMTHandMATCH(TIMERx, Channel, Duty - 1, Period - 1);											//璁剧疆 PWM 闃堝€煎苟鍖归厤
+            TIMER_Cmd(TIMERx, Channel, ENABLE);																								//鍚敤瀹氭椂鍣?
+        }
+    }
+    else
+    {
+        if (Duty == 0)
+        {
+            TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_LOW);  											//榛樿鐘舵€佷负浣庣數骞?
+            TIMER_Cmd(TIMERx, Channel, DISABLE);																							//鍏抽棴璁℃椂鍣?
+        }
+        else if (Duty == Period)
+        {
+            TIMER_SetIdleLevel(TIMERx, Channel, Timer_IDLE_LEVEL_HIGH);  											//榛樿鐘舵€佷负楂樼數骞?
+            TIMER_Cmd(TIMERx, Channel, DISABLE);																							//鍏抽棴璁℃椂鍣?
+        }
+        else
+        {
+            PWM_SetPWMTHandMATCH(TIMERx, Channel, Duty - 1, Period - 1);											//璁剧疆 PWM 闃堝€煎苟鍖归厤
+            TIMER_Cmd(TIMERx, Channel, ENABLE);																								//鎵撳紑璁℃椂鍣?
+        }
+    }
+}</main_funbody29>
+<main_funbody30>
+void PWM_OutCount(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Count)
+{
+    PWM_SetPulseCounterValue(TIMERx, Channel, Count - 1);       															//璁剧疆鍙戦€丆ount涓剦鍐?
+    PWM_PulseCounterCmd(TIMERx, Channel, ENABLE);               															//浣胯兘鑴夊啿涓暟鍙戠敓鍣?
+    TIMER_ITConfig(TIMERx, TIMER_IT_PULSE_COUNTER_FLAG | (Channel &lt;&lt; 20), ENABLE);   					//蹇呴』鎵撳紑涓柇锛屽湪涓柇涓繘琛屽悗缁鐞?
+}</main_funbody30>
+<main_funbody31>
+void PWM_Start(TIMER_TypeDef* TIMERx, uint32_t Channel)
+{
+    PWM_Cmd(TIMERx, Channel, ENABLE);																													//鍚敤PWM
+}</main_funbody31>
+<main_funbody32>
+void PWM_Stop(TIMER_TypeDef* TIMERx, uint32_t Channel)
+{
+    PWM_Cmd(TIMERx, Channel, DISABLE);																												//鍚敤PWM																			
+		TIMER_ResetCmd(TIMERx, Channel, ENABLE);																									//澶嶄綅璁℃椂鍣?
+    TIMER_ResetCmd(TIMERx, Channel, DISABLE);																									//
+}</main_funbody32>
+<main_funbody33_1>
+void Timer_Configuration_B(void)
+{
+    NVIC_InitTypeDef NVIC_InitStructure;																											//缁撴瀯浣?
+	  GPIO_InitTypeDef GPIO_InitStructure;																											//缁撴瀯浣?
+
+    /* 鎵撳紑TIMER3鐨勬椂閽燂紝骞跺浣嶆ā鍧楋紝璁剧疆鏃堕挓棰勫垎棰戜负1 */
+    Timer_Init(TIMER3, PrescaleB1);																															//瀹氭椂鍣ㄦā鍧楀垵濮嬪寲锛屾墦寮€鏃堕挓TIMER3锛屽浣嶉€氶亾
+
+    /* 鎵撳紑TIMER3鐨勪腑鏂?*/
+    NVIC_InitStructure.NVIC_IRQChannel = TIMER3_IRQn;																					//鍚敤TIMER3_IRQn閫氶亾
+    NVIC_InitStructure.NVIC_IRQChannelPriority = 0;																						//璁剧疆TIMER3_IRQn閫氶亾浼樺厛绾?
+    NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;																						//鍚敤NVIC_IRQChannel涓畾涔塈RQ閫氶亾
+    NVIC_Init(&amp;NVIC_InitStructure);
+    
+    /* 閫氶亾0閰嶇疆涓篜WM锛岃緭鍑?00KHz鐨勬柟娉紝鍗犵┖姣斾负0.5%锛屾ā寮忎负PWM_MODE_1锛岃緭鍑?00涓剦鍐?*/
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;																									//GPIO6_4
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;																				//棰戠巼楂?0MHz														
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_1;																						//澶囩敤鍔熻兘妯″紡1
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;																					//娴┖杈撳叆
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);																										//GPIO6
+    
+    PeriodB1 = ((SystemCoreClock / 1000000) * 10 / PrescaleB1); //10us														
+    Duty_tB1 = PeriodB1 * 5 / 1000;																																
+
+    PWM_Standby(TIMER3, Timer_Channel_0, PeriodB1, Duty_tB1, PWM_MODE_1);
+    PWM_OutCount(TIMER3, Timer_Channel_0, 400);
+
+    PWM_Start(TIMER3, Timer_Channel_0);               																			  //PWM杈撳嚭浣胯兘
+}</main_funbody33_1>
+<main_funbody33_2>
+void Timer_Configuration_T(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
+
+    /* Set PrescaleT1 to 1 */
+    Timer_Init(TIMER0, PrescaleT1);
+    
+    /* 通道0配置为定时器，1ms中断 */
+    Timer_Config_TP(TIMER0, Timer_Channel_0, 1000);
+    NVIC_EnableIRQ(TIMER0_IRQn);
+    
+    /* 通道1配置为PWM，输出100KHz的方波 */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_2;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIO0, &amp;GPIO_InitStructure);
+    
+    PeriodT1 = ((SystemCoreClock / 1000000) * 10 / PrescaleT1); //10us
+    Duty_tT1 = 0;
+
+    PWM_Standby(TIMER0, Timer_Channel_1, PeriodT1, Duty_tT1, PWM_MODE_0);
+    PWM_Start(TIMER0, Timer_Channel_1);           																			  //PWM杈撳嚭浣胯兘
+}</main_funbody33_2>
+<main_funbody34>
+void TIMER3_IRQHandler(void)
+{
+    static uint32_t count = 0;
+    double temp;
+    uint32_t duty;
+    
+    if (TIMER_GetITStatus(TIMER3, TIMER_IT_PENDING_PULSE_COUNTER0) == SET)
+    {
+        TIMER_ClearITPendingBit(TIMER3, TIMER_IT_PENDING_PULSE_COUNTER0);
+
+        temp = sin(PI*count/999) * 0.8 +0.19;
+        temp *= PeriodB1;
+        
+        duty = (uint32_t)temp;
+        
+        count++;
+        if (count == 1000)
+            count = 0;
+
+        TIMER3->PWMTH0 = duty - 1;
+        PWM_OutCount(TIMER3, Timer_Channel_0, 400);
+        PWM_Start(TIMER3, Timer_Channel_0);                 																//PWM杈撳嚭浣胯兘
+    }
+}</main_funbody34>
+<main_funbody35>
+void Timer_Config_TP(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us)
+{
+    TIMER_InitTypeDef TIMER_InitStructure;
+
+    /* 闄や互鍒嗛绯绘暟 */
+    us = us / (TIMER_GetPrescale(TIMERx) + 1);     
+
+    /* 瓒婄晫澶勭悊 */
+    if (us > 44739242)
+        us = 44739242;
+
+    TIMER_InitStructure.TIMER_Channel = Channel;		                                   			//閫氶亾
+    TIMER_InitStructure.TIMER_Dir = TIMER_DIR_INCREASE;		                          	      //鍚戜笂璁℃暟
+    TIMER_InitStructure.TIMER_MatchValue = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * us - 1;  //鍖归厤鍊艰缃负AHBCLK-1锛屽畾鏃跺櫒鍛ㄦ湡涓?MS
+    TIMER_InitStructure.TIMER_MatchAction = TIMER_MatchAction_HOLD;                         //TC涓嶮R鍖归厤鏃讹紝杈撳嚭绠¤剼MAT鐢靛钩涓嶅彉
+    TIMER_InitStructure.TIMER_MatchConfig = TIMER_MatchConfig_RESET_TC;                     //TC涓嶮R鍖归厤鏃讹紝澶嶄綅TC
+    TIMER_Init(TIMERx, &amp;TIMER_InitStructure);                                               //鍒濆鍖?
+    TIMER_ITConfig(TIMERx, TIMER_IT_MR0I, ENABLE);                                          //浜х敓鍖归厤涓柇
+    
+    TIMER_Cmd(TIMERx, Channel, ENABLE);
+}</main_funbody35>
+<main_funbody36>
+void PWM0_CH1_OutDuty(uint32_t Period, uint32_t Duty)
+{
+    if (Duty == 0)
+    {
+        TIMER_SetIdleLevel(TIMER0, Timer_Channel_1, Timer_IDLE_LEVEL_LOW);  								//榛樿鐘舵€佷负浣庣數骞?
+        TIMER_Cmd(TIMER0, Timer_Channel_1, DISABLE);																				//鍏抽棴瀹氭椂鍣?
+    }
+    else if (Duty == Period)
+    {
+        TIMER_SetIdleLevel(TIMER0, Timer_Channel_1, Timer_IDLE_LEVEL_HIGH);  								//榛樿鐘舵€佷负楂樼數骞?
+        TIMER_Cmd(TIMER0, Timer_Channel_1, DISABLE);																				//鍏抽棴瀹氭椂鍣?
+    }
+    else
+    {
+        Duty = Period - Duty;
+
+        TIMER0->MR1 = Period - 1;
+        TIMER0->PWMTH1 = Duty - 1;
+        TIMER_Cmd(TIMER0, Timer_Channel_1, ENABLE);																					//鎵撳紑瀹氭椂鍣?
+    }
+}</main_funbody36>
+<main_funbody37>
+void Counter_Standby(TIMER_TypeDef* TIMERx, uint32_t Channel)
+{
+    COUNTER_InitTypeDef COUNTER_InitStructure;
+
+    COUNTER_InitStructure.TIMER_Channel = Channel;                             							//閫氶亾
+    COUNTER_InitStructure.COUNTER_Pin = COUNTER_Pin_1;                          						//閫夋嫨Capture1
+    COUNTER_InitStructure.COUNTER_Dir = TIMER_DIR_INCREASE;                     						//鍚戜笂璁℃暟
+    COUNTER_InitStructure.COUNTER_Filter = COUNTER_FILTER_CYCLES_0;             						//涓嶆护娉?
+    COUNTER_InitStructure.COUNTER_Mode = COUNTER_FALLING_EDGE;                  						//涓婂崌娌挎崟鑾疯鏁?
+    COUNTER_InitStructure.COUNTER_MatchValue = 20000 - 1;                       						//鍖归厤鍊艰缃负200
+    COUNTER_InitStructure.COUNTER_MatchAction = TIMER_MatchAction_HOLD;         						//TC涓嶮R鍖归厤鏃讹紝杈撳嚭绠¤剼MAT鐢靛钩涓嶅彉
+    COUNTER_InitStructure.COUNTER_MatchConfig = TIMER_MatchConfig_RESET_TC;     						//TC涓嶮R鍖归厤鏃讹紝澶嶄綅TC
+    COUNTER_Init(TIMERx, &amp;COUNTER_InitStructure);                               						//鍒濆鍖栬鏁板櫒
+    
+    if (Channel == Timer_Channel_0)
+        TIMER_ITConfig(TIMERx, TIMER_IT_MR0I, ENABLE);                              				//鍖归厤涓柇
+    else if (Channel == Timer_Channel_1)	
+        TIMER_ITConfig(TIMERx, TIMER_IT_MR1I, ENABLE);                            				  //鍖归厤涓柇
+    else if (Channel == Timer_Channel_2)
+        TIMER_ITConfig(TIMERx, TIMER_IT_MR2I, ENABLE);                              				//鍖归厤涓柇
+    else
+        TIMER_ITConfig(TIMERx, TIMER_IT_MR3I, ENABLE);                              				//鍖归厤涓柇
+}	</main_funbody37>
+<main_funbody38>
+</main_funbody38>
+<main_funbody39>
+</main_funbody39>
+<main_funbody40>
+</main_funbody40>
+<main_funbody41>
+void Capture_Configuration(void)
+{
+	GPIO_InitTypeDef GPIO_InitStructure;																											//缁撴瀯浣?
+	
+    /* Set Prescale10 to 10 */
+    Timer_Init(TIMER0, Prescale10);																														//瀹氭椂鍣ㄦā鍧楀垵濮嬪寲锛屾墦寮€鏃堕挓TIMER3锛屽浣嶉€氶亾
+    
+    /* 閫氶亾0閰嶇疆涓篜WM锛岃緭鍑?00KHz鐨勬柟娉紝鍗犵┖姣斾负50%锛屾ā寮忎负PWM_MODE_0锛岃緭鍑?0000涓剦鍐?*/
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;																								//GPIO0_2
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;																			//棰戠巼楂?0MHz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_2;																					//澶囩敤鍔熻兘妯″紡2
+		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;																				//娴┖杈撳叆
+    GPIO_Init(GPIO0, &amp;GPIO_InitStructure);																									//GPIO0
+    
+    Period10 = ((SystemCoreClock / 1000000) * 10 / Prescale10); //10us
+    Duty_t10 = Period10 >> 1;
+
+    PWM_Standby(TIMER0, Timer_Channel_1, Period10, Duty_t10, PWM_MODE_0);
+    PWM_OutCount(TIMER0, Timer_Channel_1, 20000);
+    
+    /* Timer0鐨凜apture1鎹曡幏GPIO0-2涓婇潰鐨勬尝褰紝鎹曡幏鍒?0000涓剦鍐插悗浜х敓涓柇 */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;																								//GPIO0_5
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;																			//棰戠巼楂?0MHz
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_2;																					//澶囩敤鍔熻兘妯″紡2
+		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;																				//娴┖杈撳叆
+    GPIO_Init(GPIO0, &amp;GPIO_InitStructure);																									//GPIO0
+    
+    Counter_Standby(TIMER0, Timer_Channel_2);																								//璁℃暟鍣ㄥ姛鑳芥寜闇€閰嶇疆COUNTER_InitStructure缁撴瀯鐨勬垚鍛?
+    TIMER_Cmd(TIMER0, Timer_Channel_2, ENABLE);																							//浣胯兘USART0澶栬
+
+    NVIC_EnableIRQ(TIMER0_IRQn);																														//鍚敤澶栭儴涓柇
+
+    /* 寮€濮嬪彂閫佽剦鍐?*/
+    PWM_Start(TIMER0, Timer_Channel_1);																											//寮€濮嬪彂閫佽剦鍐?
+}</main_funbody41>
+<main_funbody42>
+</main_funbody42>
+<main_funbody43>
+void Toggle_LED(void)
+{
+    static int flag = 1;
+    
+    if (flag)
+        GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_SET);
+    else
+        GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_RESET);
+
+    flag = !flag;
+}
+</main_funbody43>
+<main_funbody44>
+void Delay_us(uint32_t us)
+{
+    SysTick->LOAD = us * CLOCK_PER_US;
+    SysTick->VAL  = (0x00);
+    SysTick->CTRL = SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk;
+
+    /* Waiting for down-count to zero */
+    while((SysTick->CTRL &amp; SysTick_CTRL_COUNTFLAG_Msk) == 0);
+}</main_funbody44>
+<main_funbody45>
+void Timer_Config(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us)
+{
+    TIMER_InitTypeDef TIMER_InitStructure;
+
+    /* 除以分频系数 */
+    us = us / (TIMER_GetPrescale(TIMERx) + 1);     
+
+    /* 越界处理 */
+    if (us > 44739242)
+        us = 44739242;
+
+    TIMER_InitStructure.TIMER_Channel = Channel;		                                    			//通道1
+    TIMER_InitStructure.TIMER_Dir = TIMER_DIR_INCREASE;		                              		  //向上计数
+    TIMER_InitStructure.TIMER_MatchValue = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000000 * us - 1;  //匹配值设置为AHBCLK-1，定时器周期为1MS
+    TIMER_InitStructure.TIMER_MatchAction = TIMER_MatchAction_HOLD;                        		//TC与MR匹配时，输出管脚MAT电平不变
+    TIMER_InitStructure.TIMER_MatchConfig = TIMER_MatchConfig_RESET_TC;                   		//TC与MR匹配时，复位TC
+    TIMER_Init(TIMERx, &amp;TIMER_InitStructure);                                               	//初始化
+    TIMER_ITConfig(TIMERx, TIMER_IT_MR0I, ENABLE);                                       		  //产生匹配中断
+
+    TIMER_Cmd(TIMERx, Channel, ENABLE);																												//启用定时器
+}
+</main_funbody45>
+<main_funbody46></main_funbody46>
+<main_funbody47></main_funbody47>
+</template>

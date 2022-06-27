@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_printf1>
+printf("\r\n-----------------|- VTM071x ACMP -|-----------------\r\n");
+</main_printf1>
+<main_printf2>
+printf("\r\n-----------------|- VTM071x ADC -|-----------------\r\n");
+</main_printf2>
+<main_printf3>
+printf("\r\n-----------------|- VTM071x DAC -|-----------------\r\n");
+</main_printf3>
+<main_printf4>
+printf("\r\n-----------------|- VTM071x DeepSleep -|-----------------\r\n");
+</main_printf4>
+<main_printf5>
+printf("\r\n-----------------|- VTM071x PowerDown -|-----------------\r\n");
+</main_printf5>
+<main_printf6>
+printf("\r\n-----------------|- VTM071x IAP -|-----------------\r\n");
+</main_printf6>
+<main_printf7>
+printf("\r\n-----------------|- VTM071x StdPeriph -|-----------------\r\n");
+</main_printf7>
+<main_printf8>
+printf("\r\n-----------------|- VTM071x I2C -|-----------------\r\n");
+</main_printf8>
+<main_printf9>
+printf("\r\n-----------------|- VTM071x MCPWM -|-----------------\r\n");
+</main_printf9>
+<main_printf10>
+printf("\r\n-----------------|- VTM071x -|-----------------\r\n");
+</main_printf10>
+<main_printf11>
+printf("\r\n-----------------|- VTM071x SPI Flash -|-----------------\r\n");
+</main_printf11>
+<main_printf12>
+printf("\r\n-----------------|- VTM071x Timer -|-----------------\r\n");
+</main_printf12>
+<main_printf13>
+printf("\r\n-----------------|- VTM071x USART -|-----------------\r\n");
+</main_printf13>
+<main_printf14>
+printf("\r\n-----------------|- VTM071x WWDG Reset -|-----------------\r\n");
+</main_printf14>
+<main_printf15>
+printf("\r\n-----------------|- VTM071x IWDG Reset -|-----------------\r\n");
+</main_printf15>
+<main_printf16></main_printf16>
+<main_printf17></main_printf17>
+</template>

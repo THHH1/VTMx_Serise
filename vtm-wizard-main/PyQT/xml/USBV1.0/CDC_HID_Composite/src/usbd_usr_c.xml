@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_usr_c_define>define_ADC1_DR_Address</usbd_usr_c_define>
+    <usbd_usr_c_var>var</usbd_usr_c_var>
+    <usbd_usr_c_USBD_USR_Init>USBD_USR_Init_125</usbd_usr_c_USBD_USR_Init>
+</template>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_conf_h_define>USBD_CFG_MAX_NUM|USBD_ITF_MAX_NUM|USB_MAX_STR_DESC_SIZ|USBD_SELF_POWERED|CUSTOMHID_SIZ_REPORT_DESC|CUSTOMHID_SIZ_CONFIG_DESC|HID_IN_EP|HID_OUT_EP|HID_IN_PACKET|HID_OUT_PACKET</usbd_conf_h_define>
+</template>

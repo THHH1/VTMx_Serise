@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <extern_Delay_ms>
+    extern void Delay_ms(uint32_t ms);
+    </extern_Delay_ms>
+    <Remote_Wakeup>
+    void Remote_Wakeup(void)
+    {
+        /* remote wakeup */
+        SetPower(GetPower() | 0x4);
+        Delay_ms(10);
+        SetPower(GetPower() &amp; (~0x4));
+        
+        /* No Resume interrupt will be generated when the software initiates a remote wakeup */
+        USBD_DCD_INT_fops->Resume(&amp;USB_Device_dev);
+    }
+    </Remote_Wakeup>
+
+</template>

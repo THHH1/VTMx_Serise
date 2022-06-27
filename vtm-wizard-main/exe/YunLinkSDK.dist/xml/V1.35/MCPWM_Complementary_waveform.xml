@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<key>main_include</key>
+<value>null</value>
+
+<key>main_define</key>
+<value>main_define8</value>
+
+<key>main_volatile</key>
+<value>null</value>
+
+<key>main_function</key>
+<value>main_function24|main_function25|main_function22</value>
+
+<key>main_printf</key>
+<value>main_printf9</value>
+
+<key>main_body</key>
+<value>main_body23</value>
+
+<key>main_whilebody</key>
+<value>main_while10|main_while11|main_while10|main_while12</value>
+
+<key>main_funbody</key>
+<value>main_funbody22|main_funbody44|main_funbody25</value>
+
+<key>main_Delay_ms</key>
+<value>main_Delay_ms3</value>
+
+<key>main_TIMER0_IRQHandler</key>
+<value>null</value>
+
+
+
+
+    <itkey>it_include</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_volatile</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_function</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_SysTick_Handler</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_funbody</itkey>
+    <itvalue>null</itvalue>
+    <itkey>it_GPIO0_TO_GPIO3_IRQHandler</itkey>
+    <itvalue>null</itvalue> 
+    <itkey>it_ADC_IRQHandler</itkey>
+    <itvalue>null</itvalue>
+
+
+</template>

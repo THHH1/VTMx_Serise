@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <define_ADC1_DR_Address>
+    #define ADC1_DR_Address    0x40012440
+    </define_ADC1_DR_Address>
+    <var>
+    uint32_t ADC_ConvertedValueX = 0;
+    uint32_t ADC_ConvertedValueX_1 = 0;
+    </var>
+    <USBD_USR_Init_125>
+    SysTick_Config(SystemCoreClock / 125);
+    </USBD_USR_Init_125>
+    <USBD_USR_Init_250>
+    SysTick_Config(SystemCoreClock / 250);
+    </USBD_USR_Init_250>
+    <USBD_USR_Init_1000>
+    SysTick_Config(SystemCoreClock / 1000);
+    </USBD_USR_Init_1000>
+</template>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_GPIO0_TO_GPIO3_IRQHandler1>
+    volatile uint32_t jitters;
+
+    if (GPIO_GetITStatus(GPIO1, GPIO_Pin_0) == SET)
+    {
+        GPIO_ClearITPendingBit(GPIO1, GPIO_Pin_0);
+        
+        /* Wait LDO status */
+        while(RCC_GetFlagStatus(RCC_LDO_STATUS) != SET);
+        
+        /* Switch LDO to main LDO */
+        RCC_SwitchLDO(RCC_MAIN_LDO);
+
+        /* Switch to 12M IRC */
+        RCC_MAINCLKSel(RCC_MAINCLK_SOURCE_12M_IRC);
+        for(jitters=0; jitters&lt;0x100; jitters++);
+        
+        /* BOR/BOD*/
+        RCC->BORCTRL = 0x8000;	//BOR
+        RCC_PDRUNConfig(RCC_PDCFG_BOD | RCC_PDCFG_BOR, RCC_PDCFG_POWER_ON);
+        for(jitters=0; jitters&lt;0x100; jitters++);
+        RCC->BORCTRL = 0x8005;	//BOR
+        
+        /* Update SystemCoreClock */
+        for(jitters=0; jitters&lt;0x100; jitters++);
+        SystemCoreClockUpdate();
+    }
+</it_GPIO0_TO_GPIO3_IRQHandler1>
+<it_GPIO0_TO_GPIO3_IRQHandler2>
+    uint32_t Gjitters, tmp = led_half_period;
+    
+    if (GPIO_GetITStatus(GPIO1, GPIO_Pin_0) == SET)
+    {
+        GPIO_ClearITPendingBit(GPIO1, GPIO_Pin_0);
+
+        for(Gjitters=0; Gjitters&lt;0x3000; Gjitters++);
+        if (GPIO_ReadDataBit(GPIO1, GPIO_Pin_0) != SET)
+            return;
+
+        led_half_period += tmp>>2;
+        if (led_half_period > 2000)
+            led_half_period = 2000;
+    }
+</it_GPIO0_TO_GPIO3_IRQHandler2>
+
+<it_GPIO0_TO_GPIO3_IRQHandler3>
+</it_GPIO0_TO_GPIO3_IRQHandler3>
+
+<it_GPIO0_TO_GPIO3_IRQHandler4>
+</it_GPIO0_TO_GPIO3_IRQHandler4>
+
+<it_GPIO0_TO_GPIO3_IRQHandler5>
+</it_GPIO0_TO_GPIO3_IRQHandler5>
+
+<it_GPIO0_TO_GPIO3_IRQHandler6>
+</it_GPIO0_TO_GPIO3_IRQHandler6>
+
+<it_GPIO0_TO_GPIO3_IRQHandler7>
+</it_GPIO0_TO_GPIO3_IRQHandler7>
+
+<it_GPIO0_TO_GPIO3_IRQHandler8>
+</it_GPIO0_TO_GPIO3_IRQHandler8>
+
+</template>

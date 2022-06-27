@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_include1>
+#include "VTM071x_dac.h"
+</main_include1>
+<main_include2>
+#include &lt;math.h>
+</main_include2>
+<main_include3>
+#include "VTM071x_eval_i2c_ee.h"
+</main_include3>
+<main_include4>
+#include "VTM071x_eval_spi.h"
+</main_include4>
+<main_include5></main_include5>
+<main_include6></main_include6>
+<main_include7></main_include7>
+<main_include8></main_include8>
+</template>

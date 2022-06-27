@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_ADC_IRQHandler_ADC_Watchdog>
+    if (ADC_GetITStatus(ADC_IT_AWD) == SET)
+    {
+        ADC_ClearITPendingBit(ADC_IT_AWD);
+
+        printf("AWD Interrupt.\r\n");
+    }
+    
+    if (ADC_GetITStatus(ADC_IT_EOC) == SET)
+    {
+        ADC_ClearITPendingBit(ADC_IT_EOC|ADC_IT_EOSEQ);
+
+        /* Print adc channal 0 value */
+        printf("%d\r\n", ADC_GetConversionValue(ADC_Channel_0));
+    }
+</it_ADC_IRQHandler_ADC_Watchdog>
+<it_ADC_IRQHandler_ADC_Chip_Temperature>
+    uint32_t temp;
+    if (ADC_GetITStatus(ADC_IT_EOC) == SET)
+    {
+        ADC_ClearITPendingBit(ADC_IT_EOC|ADC_IT_EOSEQ);
+
+        temp = ADC_GetConversionValue(ADC_Channel_15);
+        temp = temp*3300/4095;
+        temp = 1380-temp;
+        temp = temp*10 / 42;
+        
+        /* Print adc channal 15 (Temperature) value */
+        printf("Temperature: %d\r\n", temp);
+    }
+</it_ADC_IRQHandler_ADC_Chip_Temperature>
+<it_ADC_IRQHandler_ADC_Pin_Interrupt>
+    uint32_t adc_ch0, adc_ch1;
+    if (ADC_GetITStatus(ADC_IT_EOSEQ) == SET)
+    {
+        ADC_ClearITPendingBit(ADC_IT_EOSEQ);
+
+        adc_ch0 = ADC_GetConversionValue(ADC_Channel_0);
+        adc_ch1 = ADC_GetConversionValue(ADC_Channel_1);
+        
+        /* Print adc channal 0 1 value */
+        printf("%d, %d\r\n", adc_ch0, adc_ch1);
+    }
+</it_ADC_IRQHandler_ADC_Pin_Interrupt>
+<it_ADC_IRQHandler_ADC_Trigger>
+    if (ADC_GetITStatus(ADC_IT_EOSEQ) == SET)
+    {
+        ADC_ClearITPendingBit(ADC_IT_EOC|ADC_IT_EOSEQ);
+
+        /* Print adc channal 0 1 value */
+        printf("Ch0: %d, Ch1: %d\r\n", ADC_GetConversionValue(ADC_Channel_0), ADC_GetConversionValue(ADC_Channel_1));
+    } 
+</it_ADC_IRQHandler_ADC_Trigger>
+<it_ADC_IRQHandler5></it_ADC_IRQHandler5>
+<it_ADC_IRQHandler6></it_ADC_IRQHandler6>
+</template>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_pwr_c_extern>null</usbd_pwr_c_extern>
+    <usbd_pwr_c_Remote_Wakeup>null</usbd_pwr_c_Remote_Wakeup>
+
+</template>

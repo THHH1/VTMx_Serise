@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <USBD_CFG_MAX_NUM>
+    #define USBD_CFG_MAX_NUM                1
+    </USBD_CFG_MAX_NUM>
+    <USBD_ITF_MAX_NUM>
+    #define USBD_ITF_MAX_NUM                1
+    </USBD_ITF_MAX_NUM>
+    <USB_MAX_STR_DESC_SIZ>
+    #define USB_MAX_STR_DESC_SIZ            64 
+    </USB_MAX_STR_DESC_SIZ>
+    <USB_MAX_STR_DESC_SIZ255>
+    #define USB_MAX_STR_DESC_SIZ            255 
+    </USB_MAX_STR_DESC_SIZ255>    
+    <USBD_SELF_POWERED>
+    #define USBD_SELF_POWERED               
+    </USBD_SELF_POWERED>
+    <USB_SUPPORT_USER_STRING_DESC>
+    #define USB_SUPPORT_USER_STRING_DESC
+    </USB_SUPPORT_USER_STRING_DESC>
+    <CUSTOMHID_SIZ_REPORT_DESC>
+    #define CUSTOMHID_SIZ_REPORT_DESC       39
+    </CUSTOMHID_SIZ_REPORT_DESC>
+    <CUSTOMHID_SIZ_CONFIG_DESC>
+    #define CUSTOMHID_SIZ_CONFIG_DESC       41
+    </CUSTOMHID_SIZ_CONFIG_DESC>
+    <HID_IN_EP>
+    #define HID_IN_EP                       0x81
+    </HID_IN_EP>
+    <HID_OUT_EP>
+    #define HID_OUT_EP                      0x01
+    </HID_OUT_EP>
+    <HID_IN_PACKET>
+    #define HID_IN_PACKET                   64
+    </HID_IN_PACKET>
+    <HID_IN_PACKET4>
+    #define HID_IN_PACKET                   4
+    </HID_IN_PACKET4>
+    <HID_OUT_PACKET>
+    #define HID_OUT_PACKET                  64
+    </HID_OUT_PACKET>
+    <CDC_IN_EP>
+    #define CDC_IN_EP                       0x83
+    </CDC_IN_EP>
+    <CDC_IN_EP81>
+    #define CDC_IN_EP                       0x81
+    </CDC_IN_EP81>
+    <CDC_OUT_EP>
+    #define CDC_OUT_EP                      0x03
+    </CDC_OUT_EP>
+    <CDC_OUT_EP01>
+    #define CDC_OUT_EP                      0x01
+    </CDC_OUT_EP01>
+    <CDC_CMD_EP>
+    #define CDC_CMD_EP                      0x82
+    </CDC_CMD_EP>
+    <CDC_DATA_MAX_PACKET_SIZE>
+    #define CDC_DATA_MAX_PACKET_SIZE        64
+    </CDC_DATA_MAX_PACKET_SIZE>
+    <CDC_CMD_PACKET_SZE>
+    #define CDC_CMD_PACKET_SZE              64
+    </CDC_CMD_PACKET_SZE>
+    <CDC_IN_FRAME_INTERVAL>
+    #define CDC_IN_FRAME_INTERVAL           5
+    </CDC_IN_FRAME_INTERVAL>
+    <APP_RX_DATA_SIZE>
+    #define APP_RX_DATA_SIZE                2048
+    </APP_RX_DATA_SIZE>
+    <APP_FOPS>
+    #define APP_FOPS                        VCP_fops
+    </APP_FOPS>
+
+    <MSC_IN_EP>
+    #define MSC_IN_EP                       0x81
+    </MSC_IN_EP>
+    <MSC_OUT_EP>
+    #define MSC_OUT_EP                      0x02
+    </MSC_OUT_EP>
+    <MSC_MAX_PACKET>
+    #define MSC_MAX_PACKET                      0x40
+    </MSC_MAX_PACKET>
+    <MSC_MEDIA_PACKET>
+    #define MSC_MEDIA_PACKET                      4096
+    </MSC_MEDIA_PACKET>
+
+
+</template>

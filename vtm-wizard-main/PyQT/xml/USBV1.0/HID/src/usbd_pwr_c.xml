@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_pwr_c_extern>extern_Delay_ms</usbd_pwr_c_extern>
+    <usbd_pwr_c_Remote_Wakeup>Remote_Wakeup</usbd_pwr_c_Remote_Wakeup>
+
+</template>

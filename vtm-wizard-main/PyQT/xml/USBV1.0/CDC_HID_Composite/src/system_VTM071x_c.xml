@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <SYSCLK_FREQ_SYSPLL_96MHz>SYSCLK_FREQ_SYSPLL_96MHz</SYSCLK_FREQ_SYSPLL_96MHz>
+    <IF_SYSCLK_FREQ_SYSPLL_96MHz>IF_SYSCLK_FREQ_SYSPLL_96MHz</IF_SYSCLK_FREQ_SYSPLL_96MHz>
+    <SET_IF_SYSCLK_FREQ_SYSPLL_96MHz>SET_IF_SYSCLK_FREQ_SYSPLL_96MHz</SET_IF_SYSCLK_FREQ_SYSPLL_96MHz>
+    <ELIF_IFDEFINED_SYSCLK_FREQ_SYSPLL_96MHz>ELIF_IFDEFINED_SYSCLK_FREQ_SYSPLL_96MHz</ELIF_IFDEFINED_SYSCLK_FREQ_SYSPLL_96MHz>
+    <system_VTM071x_c_SystemInit>null</system_VTM071x_c_SystemInit>
+    <system_VTM071x_c_delay>delay_uint32_t</system_VTM071x_c_delay>
+    <system_VTM071x_c_SetSysClockToSYS>SetSysClockToSYS_RCC_AHBCLKCTRL_GPIO</system_VTM071x_c_SetSysClockToSYS>
+    <system_VTM071x_c_SetSysClockTo48_1>SetSysClockTo_dRRR</system_VTM071x_c_SetSysClockTo48_1>
+    <system_VTM071x_c_SetSysClockTo48_2>SetSysClockTo_d3000</system_VTM071x_c_SetSysClockTo48_2>
+    <system_VTM071x_c_SetSysClockTo60_1>SetSysClockTo_dRRR</system_VTM071x_c_SetSysClockTo60_1>
+    <system_VTM071x_c_SetSysClockTo60_2>SetSysClockTo_d3000</system_VTM071x_c_SetSysClockTo60_2>
+    <system_VTM071x_c_SetSysClockTo72_1>SetSysClockTo_dRRR</system_VTM071x_c_SetSysClockTo72_1>
+    <system_VTM071x_c_SetSysClockTo72_2>SetSysClockTo_d3000</system_VTM071x_c_SetSysClockTo72_2>
+    <system_VTM071x_c_SetSysClockTo84_1>SetSysClockTo_dRRR</system_VTM071x_c_SetSysClockTo84_1>
+    <system_VTM071x_c_SetSysClockTo84_2>SetSysClockTo_d3000</system_VTM071x_c_SetSysClockTo84_2>
+    <system_VTM071x_c_SetSysClockTo96_1>SetSysClockTo_dRRR</system_VTM071x_c_SetSysClockTo96_1>
+    <system_VTM071x_c_SetSysClockTo96_2>SetSysClockTo_d3000</system_VTM071x_c_SetSysClockTo96_2>
+    <system_VTM071x_c_SystemCoreClockUpdate>SystemCoreClockUpdate</system_VTM071x_c_SystemCoreClockUpdate>
+
+
+</template>

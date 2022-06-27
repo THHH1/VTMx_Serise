@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_desc_h_include>usbd_def|usbd_core</usbd_desc_h_include>
+</template>

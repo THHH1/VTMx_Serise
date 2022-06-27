@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_TIMER0_IRQHandler1>
+    if (TIMER_GetITStatus(TIMER0, TIMER_IT_PENDING_MR0) == SET)													//
+    {
+        TIMER_ClearITPendingBit(TIMER0, TIMER_IT_PENDING_MR0);												  //清除TIMER0中断挂起位
+        
+    }
+</main_TIMER0_IRQHandler1>
+<main_TIMER0_IRQHandler2>
+    if (TIMER_GetITStatus(TIMER0, TIMER_IT_PENDING_PULSE_COUNTER1) == SET)
+    {
+        TIMER_ClearITPendingBit(TIMER0, TIMER_IT_PENDING_PULSE_COUNTER1);
+
+        printf("PWM End\r\n");
+    }
+
+    if (TIMER_GetITStatus(TIMER0, TIMER_IT_PENDING_MR2) == SET)
+    {
+        TIMER_ClearITPendingBit(TIMER0, TIMER_IT_PENDING_MR2);
+
+        printf("Capture End\r\n");
+        PWM_OutCount(TIMER0, Timer_Channel_1, 20000);
+        PWM_Start(TIMER0, Timer_Channel_1);
+    }
+</main_TIMER0_IRQHandler2>
+<main_TIMER0_IRQHandler3>
+    if (TIMER_GetITStatus(TIMER0, TIMER_IT_PENDING_MR0) == SET)
+    {
+        TIMER_ClearITPendingBit(TIMER0, TIMER_IT_PENDING_MR0);
+
+        if (systime_ms)
+            systime_ms--;
+    }
+</main_TIMER0_IRQHandler3>
+<main_TIMER0_IRQHandler4>
+</main_TIMER0_IRQHandler4>
+<main_TIMER0_IRQHandler5></main_TIMER0_IRQHandler5>
+<main_TIMER0_IRQHandler6></main_TIMER0_IRQHandler6>
+</template>

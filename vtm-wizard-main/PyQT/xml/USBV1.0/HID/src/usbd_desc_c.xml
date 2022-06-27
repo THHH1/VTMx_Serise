@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_desc_c_define>define_HID</usbd_desc_c_define>
+    <usbd_desc_c_USBD_DeviceDesc>USBD_DeviceDesc_HID</usbd_desc_c_USBD_DeviceDesc>
+
+</template>

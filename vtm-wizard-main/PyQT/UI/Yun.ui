@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YunWizard</class>
+ <widget class="QMainWindow" name="YunWizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1050</width>
+    <height>670</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>YunWizard-v5.7.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../req/req.qrc">
+    <normaloff>:/req/Create a new project/Yun.png</normaloff>:/req/Create a new project/Yun.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>20</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="options">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../req/req.qrc">
+      <normaloff>:/req/YunWizard-v5.7.0/形状 594.png</normaloff>:/req/YunWizard-v5.7.0/形状 594.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Documents">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../req/req.qrc">
+      <normaloff>:/req/YunWizard-v5.7.0/文件夹.png</normaloff>:/req/YunWizard-v5.7.0/文件夹.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="chipBox">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>136</y>
+      <width>241</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>VTM071X</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>VTM32030X</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="chiptype">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>Product Category</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newproject">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../req/req.qrc">
+      <normaloff>:/req/update/自定义大小 – 2_slices/项目建立.png</normaloff>:/req/update/自定义大小 – 2_slices/项目建立.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-80</x>
+      <y>560</y>
+      <width>561</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="childwin"/>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>90</y>
+      <width>771</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="prowin">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinAndMaxSize</enum>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="about_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../req/req.qrc">
+      <normaloff>:/req/YunWizard-v5.7.0/关于.png</normaloff>:/req/YunWizard-v5.7.0/关于.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="keilbutton">
+    <property name="geometry">
+     <rect>
+      <x>-2</x>
+      <y>280</y>
+      <width>264</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Keil uVision</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QFrame" name="searchfram">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>18</y>
+      <width>611</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="search">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>16</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AcadEref</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-radius: 15px;  border: 2px groove gray;
+font: 9pt &quot;AcadEref&quot;;
+border-style: outset;</string>
+     </property>
+     <property name="text">
+      <string>search</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="searchline">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>16</y>
+       <width>341</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:15px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="iconkeil">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>298</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/req/YunWizard-v5.7.0/未标题-1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Allbutton">
+    <property name="geometry">
+     <rect>
+      <x>-2</x>
+      <y>208</y>
+      <width>264</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>All Projects</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="autoRepeat">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iconall">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/req/YunWizard-v5.7.0/组 11.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="newprojectlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="accessibleName">
+     <string>0</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>New Project</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="optionslabel">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>60</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Options</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="doclabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>83</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>Documents</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Aboutlabel">
+    <property name="geometry">
+     <rect>
+      <x>333</x>
+      <y>60</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>doclabel</zorder>
+   <zorder>Aboutlabel</zorder>
+   <zorder>optionslabel</zorder>
+   <zorder>newprojectlabel</zorder>
+   <zorder>newproject</zorder>
+   <zorder>Documents</zorder>
+   <zorder>options</zorder>
+   <zorder>about_2</zorder>
+   <zorder>keilbutton</zorder>
+   <zorder>iconkeil</zorder>
+   <zorder>chipBox</zorder>
+   <zorder>chiptype</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>gridLayoutWidget_2</zorder>
+   <zorder>searchfram</zorder>
+   <zorder>Allbutton</zorder>
+   <zorder>iconall</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1050</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProject">
+    <property name="title">
+     <string>Project </string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionimport"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionICP"/>
+    <addaction name="actionISP"/>
+    <addaction name="actionSSCOM"/>
+    <addaction name="actionKeilPatch"/>
+   </widget>
+   <widget class="QMenu" name="menuLanguage">
+    <property name="title">
+     <string>Language</string>
+    </property>
+    <addaction name="actionEnglish"/>
+    <addaction name="actionzn"/>
+    <addaction name="actionzn2"/>
+   </widget>
+   <addaction name="menuProject"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuLanguage"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/新前缀/update/画板 – 5_slices/项目管理.png</normaloff>:/新前缀/update/画板 – 5_slices/项目管理.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="actionimport">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/新前缀/update/画板 – 5_slices/导入.png</normaloff>:/新前缀/update/画板 – 5_slices/导入.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import Project</string>
+   </property>
+  </action>
+  <action name="actionICP">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/新前缀/update/画板 – 5_slices/新建形状工具_新增新建操作_jurassic.png</normaloff>:/新前缀/update/画板 – 5_slices/新建形状工具_新增新建操作_jurassic.png</iconset>
+   </property>
+   <property name="text">
+    <string>ICP Programming Tools</string>
+   </property>
+  </action>
+  <action name="actionISP">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/新前缀/update/画板 – 5_slices/组 20.png</normaloff>:/新前缀/update/画板 – 5_slices/组 20.png</iconset>
+   </property>
+   <property name="text">
+    <string>ISP Programming Tool</string>
+   </property>
+  </action>
+  <action name="actionSSCOM">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/新前缀/update/画板 – 5_slices/组 21.png</normaloff>:/新前缀/update/画板 – 5_slices/组 21.png</iconset>
+   </property>
+   <property name="text">
+    <string>SSCOM</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionzn">
+   <property name="text">
+    <string>简体中文</string>
+   </property>
+  </action>
+  <action name="actionzn2">
+   <property name="text">
+    <string>繁体中文</string>
+   </property>
+  </action>
+  <action name="actionKeilPatch">
+   <property name="icon">
+    <iconset resource="../req/req.qrc">
+     <normaloff>:/req/update/画板 – 5_slices/组 25_slices/组 25.png</normaloff>:/req/update/画板 – 5_slices/组 25_slices/组 25.png</iconset>
+   </property>
+   <property name="text">
+    <string>Keil Patch</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../req/req.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>newproject</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>newImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>options</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>KeilImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>keilbutton</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>showpro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>440</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>searchproject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1030</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>923</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Documents</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>DocumentsImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Allbutton</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>showallpro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>268</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about_2</sender>
+   <signal>clicked()</signal>
+   <receiver>YunWizard</receiver>
+   <slot>AboutImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>466</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>newImage()</slot>
+  <slot>open_keil5()</slot>
+  <slot>show_projects()</slot>
+  <slot>KeilImage()</slot>
+  <slot>InsertImage()</slot>
+  <slot>refresh()</slot>
+  <slot>RemoveImage()</slot>
+  <slot>showpro()</slot>
+  <slot>searchproject()</slot>
+  <slot>DocumentsImage()</slot>
+  <slot>AboutImage()</slot>
+  <slot>showallpro()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_function1>
+void DAC_Configuration(void);
+</main_function1>
+<main_function2>
+void ACMP_Configuration(void);
+</main_function2>
+<main_function3_1>
+void ADC_Configuration7(void);
+</main_function3_1>
+<main_function3_2>
+void ADC_Configuration8(void);
+</main_function3_2>
+<main_function3_3>
+void ADC_Configuration60(void);
+</main_function3_3>
+<main_function3_5>
+void ADC_Configuration60ChipTemp(void);
+</main_function3_5>
+<main_function3_4>
+void ADC_Configuration7LOOP(void);
+</main_function3_4>
+<main_functionADC8Trigger>
+void ADC_Configuration8Trigger(void);
+</main_functionADC8Trigger>
+<main_function4>
+void Timer_Init(TIMER_TypeDef* TIMERx, uint32_t Prescale);
+</main_function4>
+<main_function5>
+void Timer_Config_T(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us);
+</main_function5>
+<main_function6>
+</main_function6>
+<main_function7>
+void PowerDown(void);
+</main_function7>
+<main_function8>
+void DeepSleep(void);
+</main_function8>
+<main_function9>
+</main_function9>
+<main_function10>
+void LED_Init(void);
+</main_function10>
+<main_function11>
+void LED_Toggle(void);
+</main_function11>
+<main_function12>
+void DeepSleep_Configuration(void);
+</main_function12>
+<main_function13>
+void PowerDown_Configuration(void);
+</main_function13>
+<main_function14>
+void APROM_Erase(uint32_t flash_addr);
+</main_function14>
+<main_function15>
+void APROM_ProgramData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ProgramSize);
+</main_function15>
+<main_function16>
+void Flash_ReadData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ReadSize);
+</main_function16>
+<main_function17>
+void LDROM_Erase(uint32_t flash_addr);
+</main_function17>
+<main_function18>
+void LDROM_ProgramData(uint32_t *SramBuf, uint32_t FlashAddr, uint32_t ProgramSize);
+</main_function18>
+<main_function19_1>
+void Timer_Configuration_B(void);
+</main_function19_1>
+<main_function19_2>
+void Timer_Configuration_T(void);
+</main_function19_2>
+<main_function19_3>
+void Timer_Configuration(void);
+</main_function19_3>
+
+<main_function20>
+void GPIO_Configuration(void);
+</main_function20>
+<main_function21>
+void Toggle_LED(void);
+</main_function21>
+<main_function22>
+void Delay_us(uint32_t us);
+</main_function22>
+<main_function23>
+void RTC_Configuration(void);
+</main_function23>
+<main_function24>
+void MCPWM_Configuration(void);
+</main_function24>
+<main_function25>
+void MCPWM_Stop(uint32_t MCPWM_Channel_COM);
+</main_function25>
+<main_function26>
+void Delay_cycles(uint32_t cycles);
+</main_function26>
+<main_function27>
+</main_function27>
+<main_function28>
+void Timer_Config_TP(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us);
+</main_function28>
+<main_function29>
+void PWM_Standby(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Period, uint32_t Duty_t, uint32_t Mode);
+</main_function29>
+<main_function30>
+void PWM_OutDuty(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Period, uint32_t Duty, uint32_t Mode);
+</main_function30>
+<main_function31>
+void PWM_OutCount(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t Count);
+</main_function31>
+<main_function32>
+void PWM_Start(TIMER_TypeDef* TIMERx, uint32_t Channel);
+</main_function32>
+<main_function33>
+void PWM_Stop(TIMER_TypeDef* TIMERx, uint32_t Channel);
+</main_function33>
+<main_function34>
+void TIMER3_IRQHandler(void);
+</main_function34>
+<main_function35>
+void Capture_Configuration(void);
+</main_function35>
+<main_function36>
+void PWM0_CH1_OutDuty(uint32_t Period, uint32_t Duty);
+</main_function36>
+<main_function37>
+void Counter_Standby(TIMER_TypeDef* TIMERx, uint32_t Channel);
+</main_function37>
+<main_function38>
+void Timer_Config(TIMER_TypeDef* TIMERx, uint32_t Channel, uint32_t us);
+</main_function38>
+</template>

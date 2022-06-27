@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <app_c_include>include_usbd_usr|include_cdc_core</app_c_include>
+    <app_c_extern>null</app_c_extern>
+    <app_c_USBD_Init>USBD_Init_CDC_cb</app_c_USBD_Init>
+</template>

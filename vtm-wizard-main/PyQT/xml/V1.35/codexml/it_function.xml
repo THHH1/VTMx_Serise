@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_function1>
+void ACMP_IRQHandler(void);
+</it_function1>
+<it_function3>
+</it_function3>
+<it_function4>
+void RTC_IRQHandler(void);
+</it_function4>
+<it_function5>
+void USART0_IRQHandler(void);
+</it_function5>
+<it_function6></it_function6>
+<it_function7></it_function7>
+<it_function8></it_function8>
+<it_function9></it_function9>
+<it_function10></it_function10>
+<it_function11></it_function11>
+</template>

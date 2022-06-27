@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_conf_h_define>USBD_CFG_MAX_NUM|USBD_ITF_MAX_NUM|USB_MAX_STR_DESC_SIZ|USBD_SELF_POWERED|MSC_IN_EP|MSC_OUT_EP|MSC_MAX_PACKET|MSC_MEDIA_PACKET</usbd_conf_h_define>
+</template>

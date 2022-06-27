@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <VTM071x_it_c_define>null</VTM071x_it_c_define>
+    <VTM071x_it_c_var>null</VTM071x_it_c_var>
+    <VTM071x_it_c_function>null</VTM071x_it_c_function>
+    <VTM071x_it_c_Delay_ms>null</VTM071x_it_c_Delay_ms>
+    <VTM071x_it_c_SysTick_Handler>null</VTM071x_it_c_SysTick_Handler>
+    <VTM071x_it_c_funbody>null</VTM071x_it_c_funbody>
+
+</template>

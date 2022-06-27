@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<it_funbody1>
+void ACMP_IRQHandler(void)
+{
+    uint32_t val0 = dac0_val, val1 = dac1_val;
+    
+    if (ACMP_GetITStatus(ACMP2) == SET)
+    {
+        ACMP_ClearITPendingBit(ACMP2);
+        
+        if (ACMP_GetResult(ACMP2) == SET)
+        {
+            printf("POS > NEG \r\n");
+            printf("dac0_val: %d, dac1_val: %d. \r\n", val0, val1);
+        }
+        else
+        {
+            printf("POS &lt; NEG \r\n");
+            printf("dac0_val: %d, dac1_val: %d. \r\n", val0, val1);
+        }
+    }
+}
+</it_funbody1>
+
+<it_funbody3>
+
+</it_funbody3>
+
+<it_funbody4>
+
+</it_funbody4>
+
+<it_funbody5>
+void RTC_IRQHandler(void)
+{
+    uint32_t time;
+
+    if (RTC_GetITStatus(RTC_IT_SEC) != 0)
+    {
+        RTC_ClearITPendingBit(RTC_IT_SEC);
+        
+        time = RTC_GetTime();
+        printf("HZ:  %d.\r\n", time);
+    }
+    
+    if (RTC_GetITStatus(RTC_IT_ALARM) != 0)
+    {
+        RTC_ClearITPendingBit(RTC_IT_ALARM);
+        
+        time = RTC_GetTime();
+        printf("Alarm:  %d.\r\n", time);
+    }
+}
+</it_funbody5>
+<it_funbody6>
+void USART0_IRQHandler(void)
+{
+    uint8_t Data;
+
+    if ((USART_GetITStatus(USART0, USART_IT_RXIS) == SET) || (USART_GetITStatus(USART0, USART_IT_RXTOIS) == SET))
+    {
+        USART_ClearITPendingBit(USART0, USART_IT_RXIS);
+        USART_ClearITPendingBit(USART0, USART_IT_RXTOIS);
+
+        while(USART_GetFlagStatus(USART0, USART_FLAG_RXFE) == RESET)
+        {
+            /* Receive data from PC */
+            Data = (uint8_t)USART_ReceiveData(USART0);
+            
+            /* Send data to PC */
+            USART_SendData(USART0, Data);
+        }
+    }
+}
+</it_funbody6>
+</template>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <define>
+    #define CURSOR_STEP         5
+    #define BUTTON_LEFT_GPIO    GPIO6
+    #define BUTTON_LEFT_PIN     GPIO_Pin_3
+
+    #define BUTTON_RIGHT_GPIO   GPIO6
+    #define BUTTON_RIGHT_PIN    GPIO_Pin_1
+
+    #define BUTTON_UP_GPIO      GPIO6
+    #define BUTTON_UP_PIN       GPIO_Pin_0
+
+    #define BUTTON_DOWN_GPIO    GPIO6
+    #define BUTTON_DOWN_PIN     GPIO_Pin_2
+
+    #define BUTTON_PUSH_GPIO    GPIO5
+    #define BUTTON_PUSH_PIN     GPIO_Pin_7
+
+    #define BUTTON_LEFTCLICK_GPIO   GPIO1
+    #define BUTTON_LEFTCLICK_PIN    GPIO_Pin_4
+
+    #define BUTTON_RIGHTCLICK_GPIO  GPIO1
+    #define BUTTON_RIGHTCLICK_PIN   GPIO_Pin_3
+    </define>
+    <var_buf>
+    uint8_t buf[64]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63};
+    </var_buf>
+    <var_HID>
+    typedef enum 
+    { 
+    JOY_NONE  = 0,
+    JOY_SEL   = 1,
+    JOY_DOWN  = 2,
+    JOY_LEFT  = 3,
+    JOY_RIGHT = 4,
+    JOY_UP    = 5
+    } JOYState_TypeDef;
+    __IO uint32_t remote_wakeup =0;
+    static uint8_t HID_Buffer [4];
+
+    volatile uint32_t Ticks_ms = 0;
+    </var_HID>
+    <function>
+    static uint8_t *USBD_HID_GetPos (void);
+    </function>
+    <Delay_ms>
+    void Delay_ms(uint32_t ms)
+    {
+        volatile uint32_t ticks = Ticks_ms + ms;
+        
+        while(Ticks_ms &lt; ticks);
+    }
+    </Delay_ms>
+    <SysTick_Handler_USBD_HID_SendReport>
+    USBD_HID_SendReport(&amp;USB_Device_dev, buf, 64);
+    </SysTick_Handler_USBD_HID_SendReport>
+    <SysTick_Handler_TEST>
+        uint8_t *buf=HID_Buffer;
+        Ticks_ms++;
+        static uint8_t flag = 0;
+        uint8_t ret;
+        buf[0] = 0;
+        buf[1] = 0;
+        buf[2] = 0;
+        buf[3] = 0;
+        flag = !flag;
+        if (flag)
+            buf[1] += 4;
+        else
+            buf[1] -= 4;
+        if((buf[0] != 0) || (buf[1] != 0) || (buf[2] != 0))
+        {
+            /* Send Report */
+            ret = USBD_HID_SendReport (&amp;USB_Device_dev, buf, 4);
+            if (ret == USBD_BUSY)
+            {
+                flag = !flag;
+            }
+        }
+        /* TEST */
+    </SysTick_Handler_TEST>
+    <funbody>
+    uint8_t JoyState(void)
+    {
+        /* "right" key is pressed */
+        if (!GPIO_ReadDataBit(BUTTON_RIGHT_GPIO, BUTTON_RIGHT_PIN))
+        {
+            return JOY_RIGHT;
+        }
+        /* "left" key is pressed */
+        if (!GPIO_ReadDataBit(BUTTON_LEFT_GPIO, BUTTON_LEFT_PIN))
+        {
+            return JOY_LEFT;
+        }
+        /* "up" key is pressed */
+        if (!GPIO_ReadDataBit(BUTTON_UP_GPIO, BUTTON_UP_PIN))    
+        {
+            return JOY_UP;
+        }
+        /* "down" key is pressed */
+        if (!GPIO_ReadDataBit(BUTTON_DOWN_GPIO, BUTTON_DOWN_PIN))
+        {
+            return JOY_DOWN;
+        }
+        
+        if (!GPIO_ReadDataBit(BUTTON_PUSH_GPIO, BUTTON_PUSH_PIN))
+        {
+            return JOY_SEL;
+        }
+        /* No key is pressed */
+        else
+        {
+            return 0;
+        } 
+    }
+
+    static uint8_t *USBD_HID_GetPos (void)
+    {
+        int8_t  x = 0 , y = 0;
+        uint8_t sel = 0;
+            
+        switch (JoyState())
+        {
+            case JOY_LEFT:
+                x -= CURSOR_STEP;
+                break;  
+
+            case JOY_RIGHT:
+                x += CURSOR_STEP;
+                break;
+
+            case JOY_UP:
+                y -= CURSOR_STEP;
+                break;
+
+            case JOY_DOWN:
+                y += CURSOR_STEP;
+                break;
+            
+            case JOY_SEL:
+                sel |= 0x04;
+                break;
+            
+            default:
+                break;
+        }
+        
+        if (GPIO_ReadDataBit(BUTTON_LEFTCLICK_GPIO, BUTTON_LEFTCLICK_PIN))
+        {
+            sel |= 0x01;
+        }
+
+        if (GPIO_ReadDataBit(BUTTON_RIGHTCLICK_GPIO, BUTTON_RIGHTCLICK_PIN))
+        {
+            sel |= 0x02;
+        }
+        
+        HID_Buffer[0] = sel;
+        HID_Buffer[1] = x;
+        HID_Buffer[2] = y;
+        HID_Buffer[3] = 0;
+        
+        return HID_Buffer;
+    }
+    </funbody>
+
+</template>

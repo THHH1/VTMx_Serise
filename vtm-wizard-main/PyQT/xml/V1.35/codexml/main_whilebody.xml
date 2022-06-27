@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_while1>
+ADC_StartOfConversion();
+</main_while1>
+<main_while2>
+systick_ms = 200;
+</main_while2>
+<main_while3>
+while(systick_ms){}</main_while3>
+<main_while4>
+systick_ms = 50;
+</main_while4>
+<main_while5>
+while (ADC_GetITStatus(ADC_IT_EOSEQ) != SET);
+</main_while5>
+<main_while6>
+ADC_ClearITPendingBit(ADC_IT_EOSEQ);
+</main_while6>
+<main_while7>
+adc_ch0 = ADC_GetConversionValue(ADC_Channel_0);
+adc_ch1 = ADC_GetConversionValue(ADC_Channel_1);
+printf("%4d, %4d\r\n", adc_ch0, adc_ch1);
+</main_while7>
+<main_while8>
+    LED_Toggle();
+    Delay_ms(50);
+</main_while8>
+<main_while9>
+systick_ms = led_half_period;
+        while(systick_ms);
+        GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_SET);																	//使能GPIO6_4
+        GPIO_WriteBit(GPIO6, GPIO_Pin_5, Bit_SET);																	//使能GPIO6_5
+        systick_ms = led_half_period;	
+        while(systick_ms);																													
+        GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_RESET);																//关闭LED灯GPIO6_4
+        GPIO_WriteBit(GPIO6, GPIO_Pin_5, Bit_RESET);
+</main_while9>
+<main_while10>
+Delay_ms(100);
+</main_while10>
+<main_while11>
+MCPWM_Stop(MCPWM_CHANNEL_0 | MCPWM_CHANNEL_1 | MCPWM_CHANNEL_2);
+</main_while11>
+<main_while12>
+MCPWM_Cmd(MCPWM_CHANNEL_0 | MCPWM_CHANNEL_1 | MCPWM_CHANNEL_2, ENABLE);
+</main_while12>
+<main_while13>
+if (flagT1 == 0)
+        {
+            Duty_tT1++;
+            if (Duty_tT1 == PeriodT1)
+                flagT1 = 1;
+        }
+        else
+        {
+            Duty_tT1--;
+            if (Duty_tT1 == 0)
+                flagT1 = 0;
+        }
+        
+        Delay_ms(1);
+        PWM_OutDuty(TIMER0, Timer_Channel_1, PeriodT1, Duty_tT1, PWM_MODE_0);
+//        PWM0_CH1_OutDuty(PeriodT1, Duty_tT1);
+</main_while13>
+<main_while14>
+        Toggle_LED();       
+        Delay_ms(80);
+        /* Update WWDG counter */
+        WWDG_SetCounter(127);
+</main_while14>
+<main_while15>
+        /* Toggle LED */
+        Toggle_LED();
+        /* Insert 220 ms delay */
+        Delay_ms(220);
+        /* Reload IWDG counter */
+        IWDG_ReloadCounter();
+</main_while15>
+<main_while16></main_while16>
+<main_while17></main_while17>
+<main_while18></main_while18>
+<main_while19></main_while19>
+<main_while20></main_while20>
+<main_while21></main_while21>
+<main_while22></main_while22>
+</template>

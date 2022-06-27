@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_cdc_vcp_c_var>var_USART_RxBuffer</usbd_cdc_vcp_c_var>
+    <usbd_cdc_vcp_c_VCP_DataTx>VCP_DataTx_Buf</usbd_cdc_vcp_c_VCP_DataTx>
+    <usbd_cdc_vcp_c_USART0_IRQHandler>USART0_IRQHandler_i</usbd_cdc_vcp_c_USART0_IRQHandler>
+</template>

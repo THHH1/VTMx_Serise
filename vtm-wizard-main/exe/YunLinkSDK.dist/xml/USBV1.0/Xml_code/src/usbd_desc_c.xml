@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <define_CDC>
+    #define USBD_VID                     0x0918
+    #define USBD_PID                     0x7105
+
+    #define USBD_LANGID_STRING            0x0409
+    #define USBD_MANUFACTURER_STRING      "MIC"
+
+    #define USBD_PRODUCT_FS_STRING        "Composite CDC HID"
+
+    #define USBD_CONFIGURATION_FS_STRING  "Composite Config"
+    #define USBD_INTERFACE_FS_STRING      "Composite Interface"
+    </define_CDC>
+    <define_Custom_HID>
+    #define USBD_VID                        0x0918
+    #define USBD_PID                        0x7102
+
+    #define USBD_LANGID_STRING              0x0409
+    #define USBD_MANUFACTURER_STRING        "MIC"
+
+    #define USBD_PRODUCT_FS_STRING          "Custom HID"
+
+    #define USBD_CONFIGURATION_FS_STRING    "HID Config"
+    #define USBD_INTERFACE_FS_STRING        "HID Interface"
+    </define_Custom_HID>
+    <define_HID>
+    #define USBD_VID                     0x0918
+    #define USBD_PID                     0x7101
+
+    #define USBD_LANGID_STRING            0x0409
+    #define USBD_MANUFACTURER_STRING      "MIC"
+
+    #define USBD_PRODUCT_FS_STRING        "Joystick in FS Mode"
+
+    #define USBD_CONFIGURATION_FS_STRING  "HID Config"
+    #define USBD_INTERFACE_FS_STRING      "HID Interface"
+    </define_HID>
+    <define_MSC>
+    #define USBD_VID                        0x0918
+    #define USBD_PID                        0x7103
+
+    #define USBD_LANGID_STRING              0x0409
+    #define USBD_MANUFACTURER_STRING        "MIC"
+
+    #define USBD_PRODUCT_FS_STRING          "Mass Storage in FS Mode"
+
+    #define USBD_CONFIGURATION_FS_STRING    "MSC Config"
+    #define USBD_INTERFACE_FS_STRING        "MSC Interface"
+    </define_MSC>
+    <define_Virtual_COM_Port>
+    #define USBD_VID                        0x0918
+    #define USBD_PID                        0x7104      //VCP
+
+    #define USBD_LANGID_STRING              0x0409
+    #define USBD_MANUFACTURER_STRING        "MIC"
+
+    #define USBD_PRODUCT_FS_STRING          "MIC Virtual COM Port"
+
+    #define USBD_CONFIGURATION_FS_STRING    "VCP Config"
+    #define USBD_INTERFACE_FS_STRING        "VCP Interface"
+    </define_Virtual_COM_Port>            
+
+
+
+    <USBD_DeviceDesc_CDC>  
+    0x12,                       /*bLength */
+    USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    0x00,                       /*bcdUSB */
+    0x02,
+    0xEF,                       /*bDeviceClass*/
+    0x02,                       /*bDeviceSubClass*/
+    0x01,                       /*bDeviceProtocol*/
+    USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
+    LOBYTE(USBD_VID),           /*idVendor*/
+    HIBYTE(USBD_VID),           /*idVendor*/
+    LOBYTE(USBD_PID),           /*idVendor*/
+    HIBYTE(USBD_PID),           /*idVendor*/
+    0x00,                       /*bcdDevice rel. 2.00*/
+    0x02,
+    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    </USBD_DeviceDesc_CDC>
+    <USBD_DeviceDesc_Custom_HID>
+    0x12,                       /*bLength */
+    USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    0x10,                       /*bcdUSB */
+    0x01,
+    0x00,                       /*bDeviceClass*/
+    0x00,                       /*bDeviceSubClass*/
+    0x00,                       /*bDeviceProtocol*/
+    USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
+    LOBYTE(USBD_VID),           /*idVendor*/
+    HIBYTE(USBD_VID),           /*idVendor*/
+    LOBYTE(USBD_PID),           /*idVendor*/
+    HIBYTE(USBD_PID),           /*idVendor*/
+    0x00,                       /*bcdDevice rel. 2.00*/
+    0x02,
+    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    </USBD_DeviceDesc_Custom_HID>
+    <USBD_DeviceDesc_HID>
+    0x12,                       /*bLength */
+    USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    0x10,                       /*bcdUSB */
+    0x01,
+    0x00,                       /*bDeviceClass*/
+    0x00,                       /*bDeviceSubClass*/
+    0x00,                       /*bDeviceProtocol*/
+    USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
+    LOBYTE(USBD_VID),           /*idVendor*/
+    HIBYTE(USBD_VID),           /*idVendor*/
+    LOBYTE(USBD_PID),           /*idVendor*/
+    HIBYTE(USBD_PID),           /*idVendor*/
+    0x00,                       /*bcdDevice rel. 2.00*/
+    0x02,
+    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    </USBD_DeviceDesc_HID>
+    <USBD_DeviceDesc_MSC>
+    0x12,                       /*bLength */
+    USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    0x00,                       /*bcdUSB */
+    0x02,
+    0x00,                       /*bDeviceClass*/
+    0x00,                       /*bDeviceSubClass*/
+    0x00,                       /*bDeviceProtocol*/
+    USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
+    LOBYTE(USBD_VID),           /*idVendor*/
+    HIBYTE(USBD_VID),           /*idVendor*/
+    LOBYTE(USBD_PID),           /*idVendor*/
+    HIBYTE(USBD_PID),           /*idVendor*/
+    0x00,                       /*bcdDevice rel. 2.00*/
+    0x02,
+    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    </USBD_DeviceDesc_MSC>
+    <USBD_DeviceDesc_Virtual_COM_Port>
+    0x12,                       /*bLength */
+    USB_DEVICE_DESCRIPTOR_TYPE, /*bDescriptorType*/
+    0x10,                       /*bcdUSB */
+    0x01,
+    0x02,                       /*bDeviceClass*/
+    0x00,                       /*bDeviceSubClass*/
+    0x00,                       /*bDeviceProtocol*/
+    USB_MAX_EP0_SIZE,           /*bMaxPacketSize*/
+    LOBYTE(USBD_VID),           /*idVendor*/
+    HIBYTE(USBD_VID),           /*idVendor*/
+    LOBYTE(USBD_PID),           /*idVendor*/
+    HIBYTE(USBD_PID),           /*idVendor*/
+    0x00,                       /*bcdDevice rel. 2.00*/
+    0x01,
+    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
+    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
+    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
+    USBD_CFG_MAX_NUM            /*bNumConfigurations*/
+    </USBD_DeviceDesc_Virtual_COM_Port>            
+
+
+
+    
+</template>
+
+

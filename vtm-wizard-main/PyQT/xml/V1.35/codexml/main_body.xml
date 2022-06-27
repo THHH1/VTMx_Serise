@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+<main_body1>
+SysTick_Config(SystemCoreClock / 4000);
+</main_body1>
+<main_body2>
+DAC_Configuration();
+</main_body2>
+<main_body3>
+ACMP_Configuration();
+</main_body3>
+<main_body4>
+uint32_t systickclk;
+</main_body4>
+<main_body5>
+systickclk = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 1000;
+</main_body5>
+<main_body6>
+SysTick_Config(systickclk);
+</main_body6>
+<main_body7_1>
+ADC_Configuration7();
+</main_body7_1>
+<main_body7_2>
+ADC_Configuration8();
+</main_body7_2>
+<main_body7_3>
+ADC_Configuration60();
+</main_body7_3>
+<main_body7_5>
+ADC_Configuration60ChipTemp();
+</main_body7_5>
+<main_body7_4>
+ADC_Configuration7LOOP();
+</main_body7_4>
+<main_bodyADC8Trigger>
+ADC_Configuration8Trigger();
+</main_bodyADC8Trigger>
+<main_body8>
+uint32_t adc_ch0, adc_ch1;
+</main_body8>
+<main_body9>
+Timer_Config_T(TIMER0, Timer_Channel_0, 100000);
+</main_body9>
+<main_body10>
+ADC_StopOfConversion();
+</main_body10>
+<main_body11>
+systick_ms = 5000;
+</main_body11>
+<main_body12>
+while(systick_ms);
+</main_body12>
+<main_body13>
+ADC_StartOfConversion();
+</main_body13>
+<main_body14>
+uint32_t i;
+</main_body14>
+<main_body15>
+LED_Init();
+</main_body15>
+<main_body16>
+for (i=0; i&lt;21; i++)																																//for循环
+    {	
+        LED_Toggle();
+        Delay_ms(150);
+    }
+</main_body16>
+<main_body17>
+DeepSleep_Configuration();
+</main_body17>
+<main_body18>
+PowerDown_Configuration();
+</main_body18>
+<main_body19>
+    int iii;
+    for (iii=0; iii&lt;128; iii++)
+    {
+        r_buf[iii] = iii;
+        w_buf[iii] = 255-iii;
+    }
+    APROM_Erase(FLASH_TEST_APROM_ADDR);
+    APROM_ProgramData(w_buf, FLASH_TEST_APROM_ADDR, 512);
+    Flash_ReadData(r_buf, FLASH_TEST_APROM_ADDR, 512);
+    for (iii=0; iii&lt;128; iii++)
+    {
+        if (w_buf[iii] != r_buf[iii])
+        {
+            printf("Programm APROM ........................... Failed!\r\n");
+            break;
+        }
+    }
+    if (iii == 128)
+        printf("APROM Test.................................... OK!\r\n");
+
+    for (iii=0; iii&lt;128; iii++)																		
+    {
+        r_buf[iii] = iii;
+        w_buf[iii] = 255-iii;
+    }
+    LDROM_Erase(FLASH_TEST_LDROM_ADDR);
+    LDROM_ProgramData(w_buf, FLASH_TEST_LDROM_ADDR, 512);
+    Flash_ReadData(r_buf, FLASH_TEST_LDROM_ADDR, 512);														//
+    for (iii=0; iii&lt;128; iii++)																													//for寰幆
+    {
+        if (w_buf[iii] != r_buf[iii])
+        {
+            printf("Programm LDROM ........................... Failed!\r\n");			//杈撳嚭鎵撳嵃
+            break;			
+        }
+    }
+    if (iii == 128)																																	//i鏄惁绛変簬128
+        printf("LDROM Test.................................... OK!\r\n");
+</main_body19>
+<main_body20>
+systickclk = RCC_GetClocksFreq(RCC_CLOCKFREQ_SYSAHBCLK) / 2000;
+</main_body20>
+<main_body21>
+GPIO_Configuration();
+</main_body21>
+<main_body22>
+uint8_t WriteBuf[64], ReadBuf[64];      																		  //分别创建64位数组WriteBuf和ReadBuf
+    int j, ret=0, err=0;                   																		    //声明变量i，ret，err
+for (j=0; j&lt;64; j++)                    																		  //for循环
+    {
+        WriteBuf[j] = j+6;  																										  //
+        ReadBuf[j] = 0xa5;																											  //
+    }
+
+	sEE_Init();																																			//初始化I2C EEPROM驱动程序使用的外围设备
+
+	ret = sEE_WriteBuffer(WriteBuf, EEPROM_ADDRESS, 64);														//
+
+    if (ret != 0)																																	//
+        printf("Write Buffer: 0x%x.\r\n", ret);																		//输出打印
+    
+    ret = sEE_ReadBuffer(ReadBuf, EEPROM_ADDRESS, 64);														//
+
+    if (ret != 0)																																	//
+        printf("Read Buffer: 0x%x.\r\n", ret);																		//输出打印
+
+    for (j=0; j&lt;64; j++)																													//for循环
+    {
+        if (WriteBuf[j] != ReadBuf[j])																						//WriteBuf[i]和ReadBuf[i]是否相等
+            err++;																																//err = err + 1
+    }
+
+    if (err)
+        printf("Not Match.\r\n");																									//输出打印Not Match
+    else
+        printf("Match.\r\n");																											//输出打印Match
+</main_body22>
+<main_body23>
+MCPWM_Configuration();
+</main_body23>
+<main_body24>
+RTC_Configuration();
+</main_body24>
+<main_body25>
+int ii;																																//变量 i
+    uint8_t ID[4];																												//数组ID
+for (ii=0; ii&lt;256; ii++)																									//for 循环
+    {
+        read_buf[ii] = 0;																									//
+        write_buf[ii] = ii;																									//
+    }
+    
+    /* Init SPI */
+    SPI_FLASH_Init();																											//初始化SPI
+    /* Read ID */
+    SPI_FLASH_ReadID(ID);																									//读取SPI FLASH 的ID
+    printf("ID: 0x%x, 0x%x.\r\n", ID[0], ID[1]);													//输出打印
+    
+    /* Erase Sector 0 */
+    SPI_FLASH_EraseSector4K(0);																						//擦除一个扇区
+    /* Read */
+    SPI_FLASH_Read(read_buf, 0, 256);																			//从 SPI FLASH 读取数据
+    for (ii=0; ii&lt;256; ii++)																									//for 循环
+    {
+        printf("0x%x.\r\n", read_buf[ii]);																	//输出打印
+    }
+    
+    /* Write */
+    SPI_FLASH_Write(write_buf, 0, 256);																		//将数据写入SPI FLASH
+    SPI_FLASH_Read(read_buf, 0, 256);																			//从SPI FLASH 读取数据
+    for (ii=0; ii&lt;256; ii++)																									//for 循环
+    {
+        printf("0x%x.\r\n", read_buf[ii]);																	//输出打印
+    }</main_body25>
+<main_body26_1>
+Timer_Configuration_B();
+</main_body26_1>
+<main_body26_2>
+Timer_Configuration_T();
+</main_body26_2>
+<main_body27>
+Capture_Configuration();
+</main_body27>
+<main_body28>
+int flagT1 = 0;
+</main_body28>
+<main_body29>
+GPIO_InitTypeDef GPIO_InitStructure;
+
+    /* LED */
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_2;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+    GPIO_Init(GPIO6, &amp;GPIO_InitStructure);
+    GPIO_WriteBit(GPIO6, GPIO_Pin_4, Bit_SET);
+</main_body29>
+<main_body30>
+/* WWDG Clock */
+    RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_WWDG, ENABLE);
+    
+    /* DeInit */
+    WWDG_DeInit();
+
+    /* WWDG clock counter = (AHB (84MHz)/16384)/8 = 641.4Hz (~1.56 ms)  */
+    WWDG_SetPrescaler(WWDG_Prescaler_8);
+
+    /* Set Window value to 80; WWDG counter should be refreshed only when the counter
+    is below 80 (and greater than 64) otherwise a reset will be generated */
+    WWDG_SetWindowValue(80);
+
+    /* Enable WWDG and set counter value to 127, WWDG timeout = ~1.56 ms * 64 = 99.84 ms 
+       In this case the refresh window is: 
+       ~1.56 ms * (127-80) = 73.32ms &lt;refresh window &lt; ~1.56 ms * 64 = 99.84 ms 
+    */
+    WWDG_Enable(127);
+</main_body30>
+<main_body31>
+    
+    /* IWDG Clock */
+    RCC_APBPeriphClockCmd(RCC_AHBCLKCTRL_IWDG, ENABLE);															//使能IWDG时钟
+    
+    /* IWDG timeout equal to 250 ms (the timeout may varies due to 10K frequency
+     dispersion) */
+    /* Enable write access to IWDG_PR and IWDG_RLR registers */
+    IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);																		//启用IWDG_PR和IWDG_RLR寄存器的写入访问。
+
+    /* IWDG counter clock: 10K/4 */
+    IWDG_SetPrescaler(IWDG_Prescaler_4);																						//设置IWDG预分频器值
+
+    /* Set counter reload value to obtain 250ms IWDG TimeOut.
+     Counter Reload Value = 250ms/IWDG counter clock period
+                          = 250ms / (10000/4)
+                          = 0.25s / (10000/4)
+                          = 10000/(4 * 4)
+                          = 10000/16
+    */
+    IWDG_SetReload(10000/16);																												//设置 IWDG 重载值
+
+    /* Reload IWDG counter */
+    IWDG_ReloadCounter();																														//重新加载IWDG计数器
+
+    /* Enable IWDG (the LSI oscillator will be enabled by hardware) */
+    IWDG_Enable();
+</main_body31>
+<main_body32></main_body32>
+<main_body33></main_body33>
+<main_body34></main_body34>
+<main_body35></main_body35>
+<main_body36></main_body36>
+<main_body37></main_body37>
+<main_body38></main_body38>
+</template>

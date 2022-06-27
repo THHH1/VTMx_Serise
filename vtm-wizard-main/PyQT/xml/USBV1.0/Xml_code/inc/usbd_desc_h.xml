@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <usbd_def>
+    #include "usbd_def.h"
+    </usbd_def>
+    <usbd_core>
+    #include "usbd_core.h"
+    </usbd_core>
+</template>
